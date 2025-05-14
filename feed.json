@@ -1,0 +1,14 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "RadauApp",
+    "description": "",
+    "home_page_url": "https://jnsn-b.github.io/RadauApp-page",
+    "feed_url": "https://jnsn-b.github.io/RadauApp-page/feed.json",
+    "user_comment": "",
+    "icon": "https://jnsn-b.github.io/RadauApp-page/media/website/RadauAppBanner.png",
+    "author": {
+        "name": "Jens"
+    },
+    "items": [
+    ]
+}
