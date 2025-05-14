@@ -1,3 +1,2 @@
 User-agent: *
 Disallow:
-Sitemap: https://jnsn-b.github.io/RadauApp-page/sitemap.xml
