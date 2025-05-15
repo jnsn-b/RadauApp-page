@@ -21,7 +21,7 @@ const benefits = [
     title: "Volle Kontrolle & Datenschutz",
     description: "Behalte die Hoheit über die Daten deiner Kinder. Keine Cloudbindung, volle Privatsphäre.",
     bgColor: "bg-accent/10",
-    textColor: "text-accent-foreground" // Using accent-foreground as accent is yellow
+    textColor: "text-accent" // Changed from text-accent-foreground
   },
 ];
 
