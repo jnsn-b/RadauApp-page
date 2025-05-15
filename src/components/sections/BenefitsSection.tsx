@@ -7,21 +7,21 @@ const benefits = [
     title: "Spare Geld",
     description: "Verzichte auf teure Spezial-Hardware wie TonieBox & Co. Nutze, was du schon hast!",
     bgColor: "bg-primary/10",
-    textColor: "text-primary"
+    textColor: "text-foreground" // Changed from text-primary for better contrast
   },
   {
     icon: Recycle,
     title: "Sei nachhaltig",
     description: "Gib alten Geräten ein neues Leben, statt sie wegzuwerfen. Gut für die Umwelt!",
     bgColor: "bg-secondary/10",
-    textColor: "text-secondary"
+    textColor: "text-secondary-foreground" // Changed from text-secondary for better contrast
   },
   {
     icon: Lock,
     title: "Volle Kontrolle & Datenschutz",
     description: "Behalte die Hoheit über die Daten deiner Kinder. Keine Cloudbindung, volle Privatsphäre.",
     bgColor: "bg-accent/10",
-    textColor: "text-accent" // Changed from text-accent-foreground
+    textColor: "text-foreground" // Changed from text-accent for better contrast
   },
 ];
 
@@ -39,7 +39,7 @@ export default function BenefitsSection() {
           {benefits.map((benefit) => (
             <Card key={benefit.title} className={`shadow-lg hover:shadow-xl transition-shadow duration-300 ${benefit.bgColor}`}>
               <CardHeader className="items-center text-center">
-                <div className={`p-4 rounded-full ${benefit.bgColor === 'bg-accent/10' ? 'bg-accent/20' : benefit.bgColor} inline-block mb-4`}>
+                <div className={`p-4 rounded-full ${benefit.bgColor === 'bg-accent/10' ? 'bg-accent/20' : benefit.bgColor === 'bg-primary/10' ? 'bg-primary/20' : benefit.bgColor} inline-block mb-4`}>
                   <benefit.icon className={`h-12 w-12 ${benefit.textColor}`} />
                 </div>
                 <CardTitle className={`text-2xl font-semibold ${benefit.textColor}`}>{benefit.title}</CardTitle>
