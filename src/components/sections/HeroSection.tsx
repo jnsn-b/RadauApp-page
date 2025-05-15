@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
@@ -25,11 +26,26 @@ export default function HeroSection() {
             <h2 className="text-3xl font-bold text-white opacity-90">So einfach, so smart!</h2>
           </div>
         </div>
-        <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
-          <a href="#what-is-radauapp">
-            Mehr erfahren <ArrowDown className="ml-2 h-5 w-5" />
-          </a>
-        </Button>
+        <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+          <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-accent-foreground" asChild>
+            <Link href="#what-is-radauapp">
+              Mehr erfahren <ArrowDown className="ml-2 h-5 w-5" />
+            </Link>
+          </Button>
+          <Link href="https://apps.apple.com/de/app/radauapp/id6745492017" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <Image
+              // Bitte ersetzen Sie diesen Platzhalter durch das tatsächliche "Download on the App Store"-Bild.
+              // Das Originalbild hatte die Dimensionen, die hier im src-Attribut verwendet werden (250x83).
+              // Passen Sie width und height ggf. an das tatsächliche Bild an.
+              src="https://placehold.co/250x83.png" 
+              alt="Download on the App Store"
+              width={250}
+              height={83}
+              data-ai-hint="app store badge"
+              className="h-auto transition-transform hover:scale-105"
+            />
+          </Link>
+        </div>
       </div>
     </section>
   );
