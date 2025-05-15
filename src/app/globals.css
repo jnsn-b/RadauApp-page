@@ -24,7 +24,7 @@ body {
     --secondary-foreground: 0 0% 20%; /* Dark Gray for text on Lighter Gray */
 
     --muted: 0 0% 94%; /* Light Gray for muted backgrounds (derived from #E0E0E0) */
-    --muted-foreground: 0 0% 45%; /* Medium Gray for text on muted */
+    --muted-foreground: 0 0% 35%; /* Medium-Dark Gray for text on muted (darkened for contrast) */
 
     --accent: 180 100% 25%; /* Teal #008080 */
     --accent-foreground: 0 0% 100%; /* White */
