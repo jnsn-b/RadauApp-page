@@ -7,7 +7,7 @@ const features = [
     icon: Smartphone,
     title: "Nachhaltige Alternative",
     description: "Du hast noch ein altes iPhone 6s oder neuer zuhause? Perfekt! Mit RadauApp machst du daraus eine kinderleichte Musikbox.",
-    image: "/images/Musik_DE_Small.jpg", // Changed from "Musik_DE Small.jpg"
+    image: "/images/Musik_DE_Small.jpeg", 
   },
   {
     icon: Music,
