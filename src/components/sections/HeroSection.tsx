@@ -34,14 +34,13 @@ export default function HeroSection() {
           </Button>
           <Link href="https://apps.apple.com/de/app/radauapp/id6745492017" target="_blank" rel="noopener noreferrer" className="inline-block">
             <Image
-              // Bitte ersetzen Sie diesen Platzhalter durch das tatsächliche "Download on the App Store"-Bild.
-              // Das Originalbild hatte die Dimensionen, die hier im src-Attribut verwendet werden (250x83).
-              // Passen Sie width und height ggf. an das tatsächliche Bild an.
-              src="https://placehold.co/250x83.png" 
+              // Ensure this image is placed in 'public/images/download-application-button-apple-app-store-free-vector.jpg'
+              src="/images/download-application-button-apple-app-store-free-vector.jpg" 
               alt="Download on the App Store"
               width={250}
               height={83}
-              data-ai-hint="app store badge"
+              // You can remove data-ai-hint if you no longer need it
+              // data-ai-hint="app store badge" 
               className="h-auto transition-transform hover:scale-105"
             />
           </Link>
