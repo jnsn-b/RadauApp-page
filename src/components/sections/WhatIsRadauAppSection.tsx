@@ -7,36 +7,31 @@ const features = [
     icon: Smartphone,
     title: "Nachhaltige Alternative",
     description: "Du hast noch ein altes iPhone 6s oder neuer zuhause? Perfekt! Mit RadauApp machst du daraus eine kinderleichte Musikbox.",
-    image: "https://placehold.co/400x300.png",
-    aiHint: "old iphone recycling",
+    image: "/images/old-iphone-recycling-DE.jpg",
   },
   {
     icon: Music,
     title: "Apple Music & MP3s",
     description: "Greife auf die riesige Bibliothek von Apple Music zu oder spiele deine eigenen MP3-Dateien ab.",
-    image: "https://placehold.co/400x300.png",
-    aiHint: "music notes playlist",
+    image: "/images/music-notes-playlist-DE.jpg",
   },
   {
     icon: Mic,
     title: "Lieblings-Podcasts",
     description: "Integriere die spannendsten und lehrreichsten Podcasts für Kinder.",
-    image: "https://placehold.co/400x300.png",
-    aiHint: "podcast microphone kids",
+    image: "/images/podcast-microphone-kids-DE.jpg",
   },
   {
     icon: Radio,
     title: "Kindgerechtes Webradio",
     description: "Sicher ausgewählte Webradio-Sender, die speziell für Kinder geeignet sind.",
-    image: "https://placehold.co/400x300.png",
-    aiHint: "radio children music",
+    image: "/images/radio-children-music-DE.jpg",
   },
   {
     icon: Smile,
     title: "Kinderleichte Bedienung",
     description: "Bewusst einfach gehalten – ganz ohne Lesekenntnisse. Große Kacheln, intuitive Icons und keine Ablenkung. Einfach tippen – Musik läuft!",
-    image: "https://placehold.co/400x300.png",
-    aiHint: "child using tablet",
+    image: "/images/child-using-tablet-DE.jpg",
   },
 ];
 
@@ -55,7 +50,7 @@ export default function WhatIsRadauAppSection() {
           {features.map((feature) => (
             <Card key={feature.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="relative w-full h-48">
-                <Image src={feature.image} alt={feature.title} layout="fill" objectFit="cover" data-ai-hint={feature.aiHint} />
+                <Image src={feature.image} alt={feature.title} layout="fill" objectFit="cover" />
               </div>
               <CardHeader className="pb-4">
                 <div className="flex items-center mb-3">
