@@ -50,7 +50,7 @@ export default function WhatIsRadauAppSection() {
           {features.map((feature) => (
             <Card key={feature.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="relative w-full h-48">
-                <Image src={feature.image} alt={feature.title} layout="fill" objectFit="cover" />
+                <Image src={feature.image} alt={feature.title} layout="fill" objectFit="contain" />
               </div>
               <CardHeader className="pb-4">
                 <div className="flex items-center mb-3">
