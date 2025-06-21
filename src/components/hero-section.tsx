@@ -33,11 +33,18 @@ export default function HeroSection({ content }: HeroSectionProps) {
           {content.description}
         </p>
       </div>
-      <div className="mt-12 max-w-sm mx-auto">
-        <Carousel className="w-full">
-          <CarouselContent>
+      <div className="mt-12 max-w-6xl mx-auto">
+        <Carousel 
+          className="w-full"
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+        >
+          <CarouselContent className="-ml-4">
             {Array.from({ length: 6 }).map((_, index) => (
-              <CarouselItem key={index}>
+              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
                   <Image
                     src={`https://placehold.co/1290x2796.png`}
                     alt={`${content.imageAlt} Screenshot ${index + 1}`}
@@ -46,6 +53,7 @@ export default function HeroSection({ content }: HeroSectionProps) {
                     className="rounded-2xl shadow-2xl"
                     data-ai-hint="app screenshot"
                   />
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
