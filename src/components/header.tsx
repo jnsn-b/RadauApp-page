@@ -9,9 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
 
-// Using inline SVGs for flags to avoid adding new files
 const GermanFlag = () => (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" className="w-5 h-auto rounded-sm">
       <rect width="5" height="1" y="0" fill="#000000"/>
@@ -33,8 +31,12 @@ const UKFlag = () => (
 
 type Language = "de" | "en";
 
-export default function Header() {
-  const [language, setLanguage] = useState<Language>("de");
+interface HeaderProps {
+  language: Language;
+  setLanguage: (language: Language) => void;
+}
+
+export default function Header({ language, setLanguage }: HeaderProps) {
 
   return (
     <header className="py-6 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-background/80 backdrop-blur-sm sticky top-0 z-50 border-b border-border/50">
