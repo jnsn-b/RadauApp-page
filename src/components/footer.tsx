@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Headphones } from "lucide-react";
+import { Volume2 } from "lucide-react";
 
 interface FooterContent {
     tagline: string;
@@ -19,7 +19,7 @@ export default function Footer({ content }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-2">
             <Link href="/" className="flex items-center gap-2 text-xl font-bold font-headline text-primary">
-                <Headphones className="h-6 w-6" />
+                <Volume2 className="h-6 w-6" />
                 RadauApp
             </Link>
             <p className="text-muted-foreground">{content.tagline}</p>
