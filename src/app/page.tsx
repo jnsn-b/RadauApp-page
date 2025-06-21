@@ -8,6 +8,8 @@ import WorkSection from "@/components/work-section";
 import JournalSection from "@/components/journal-section";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
+import CookieBanner from "@/components/cookie-banner";
+import { useCookieConsent } from "@/hooks/use-cookie-consent";
 
 type Language = "de" | "en";
 
@@ -63,6 +65,12 @@ const translations = {
       imprint: "Impressum",
       privacy: "Datenschutz",
       copy: "Alle Rechte vorbehalten."
+    },
+    cookieBanner: {
+      message: "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit der weiteren Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.",
+      accept: "Akzeptieren",
+      decline: "Ablehnen",
+      privacyPolicy: "Unsere Datenschutzrichtlinie."
     }
   },
   en: {
@@ -116,6 +124,12 @@ const translations = {
       imprint: "Imprint",
       privacy: "Privacy Policy",
       copy: "All rights reserved."
+    },
+    cookieBanner: {
+      message: "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+      accept: "Accept",
+      decline: "Decline",
+      privacyPolicy: "Our Privacy Policy."
     }
   }
 };
@@ -123,6 +137,7 @@ const translations = {
 export default function Home() {
   const [language, setLanguage] = useState<Language>("de");
   const content = useMemo(() => translations[language], [language]);
+  const { shouldShowBanner, giveConsent } = useCookieConsent();
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -135,6 +150,12 @@ export default function Home() {
         <CtaSection content={content.cta} />
       </main>
       <Footer content={content.footer} />
+      {shouldShowBanner && (
+        <CookieBanner
+          content={content.cookieBanner}
+          onDismiss={giveConsent}
+        />
+      )}
     </div>
   );
 }

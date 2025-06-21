@@ -5,6 +5,8 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+import CookieBanner from "@/components/cookie-banner";
+import { useCookieConsent } from "@/hooks/use-cookie-consent";
 
 type Language = "de" | "en";
 
@@ -25,6 +27,12 @@ const translations = {
       imprint: "Impressum",
       privacy: "Datenschutz",
       copy: "Alle Rechte vorbehalten."
+    },
+    cookieBanner: {
+      message: "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit der weiteren Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.",
+      accept: "Akzeptieren",
+      decline: "Ablehnen",
+      privacyPolicy: "Unsere Datenschutzrichtlinie."
     }
   },
   en: {
@@ -43,6 +51,12 @@ const translations = {
       imprint: "Imprint",
       privacy: "Privacy Policy",
       copy: "All rights reserved."
+    },
+    cookieBanner: {
+      message: "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
+      accept: "Accept",
+      decline: "Decline",
+      privacyPolicy: "Our Privacy Policy."
     }
   }
 };
@@ -50,6 +64,7 @@ const translations = {
 export default function DatenschutzPage() {
   const [language, setLanguage] = useState<Language>("de");
   const content = useMemo(() => translations[language], [language]);
+  const { shouldShowBanner, giveConsent } = useCookieConsent();
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
@@ -77,6 +92,12 @@ export default function DatenschutzPage() {
         </div>
       </main>
       <Footer content={content.footer} />
+       {shouldShowBanner && (
+        <CookieBanner
+          content={content.cookieBanner}
+          onDismiss={giveConsent}
+        />
+      )}
     </div>
   );
 }
