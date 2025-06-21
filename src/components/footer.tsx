@@ -5,6 +5,8 @@ interface FooterContent {
     tagline: string;
     contact: string;
     location: string;
+    imprint: string;
+    privacy: string;
     copy: string;
 }
 
@@ -35,8 +37,12 @@ export default function Footer({ content }: FooterProps) {
             <p className="text-muted-foreground">Reilingen, DE</p>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+        <div className="mt-12 pt-8 border-t text-sm text-muted-foreground flex flex-col sm:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} RadauApp. {content.copy}</p>
+          <nav className="flex gap-x-6">
+            <Link href="/impressum" className="hover:text-primary transition-colors">{content.imprint}</Link>
+            <Link href="/datenschutz" className="hover:text-primary transition-colors">{content.privacy}</Link>
+          </nav>
         </div>
       </div>
     </footer>

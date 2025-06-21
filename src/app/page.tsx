@@ -60,6 +60,8 @@ const translations = {
       tagline: "Die nachhaltige Kinder-Jukebox.",
       contact: "Kontakt",
       location: "Standort",
+      imprint: "Impressum",
+      privacy: "Datenschutz",
       copy: "Alle Rechte vorbehalten."
     }
   },
@@ -111,6 +113,8 @@ const translations = {
       tagline: "The sustainable kids' jukebox.",
       contact: "Contact",
       location: "Location",
+      imprint: "Imprint",
+      privacy: "Privacy Policy",
       copy: "All rights reserved."
     }
   }
