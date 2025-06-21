@@ -45,7 +45,7 @@ export default function WorkSection({ content }: WorkSectionProps) {
         </div>
         <div className="order-1 md:order-2 flex justify-center">
             <Image
-              src="https://placehold.co/500x600.png"
+              src="/kid.jpg"
               alt={content.imageAlt}
               width={500}
               height={600}
