@@ -1,4 +1,11 @@
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 interface HeroContent {
   subtitle: string;
@@ -24,15 +31,25 @@ export default function HeroSection({ content }: HeroSectionProps) {
           {content.description}
         </p>
       </div>
-      <div className="mt-12 max-w-5xl mx-auto">
-        <Image
-          src="https://placehold.co/1200x800.png"
-          alt={content.imageAlt}
-          width={1200}
-          height={800}
-          className="rounded-2xl shadow-2xl"
-          data-ai-hint="kids music app iphone"
-        />
+      <div className="mt-12 max-w-sm mx-auto">
+        <Carousel className="w-full">
+          <CarouselContent>
+            {Array.from({ length: 6 }).map((_, index) => (
+              <CarouselItem key={index}>
+                  <Image
+                    src={`https://placehold.co/1290x2796.png`}
+                    alt={`${content.imageAlt} Screenshot ${index + 1}`}
+                    width={1290}
+                    height={2796}
+                    className="rounded-2xl shadow-2xl"
+                    data-ai-hint="app screenshot"
+                  />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden sm:flex" />
+          <CarouselNext className="hidden sm:flex" />
+        </Carousel>
       </div>
     </section>
   );
