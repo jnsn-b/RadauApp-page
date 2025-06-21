@@ -21,7 +21,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ content }: HeroSectionProps) {
   return (
-    <section className="text-center py-16 md:py-24 px-4 overflow-hidden">
+    <section className="text-center py-16 md:py-24 px-4">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter text-primary">
           RadauApp
