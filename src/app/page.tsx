@@ -121,7 +121,7 @@ export default function Home() {
   const content = useMemo(() => translations[language], [language]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground animate-fade-in">
+    <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header language={language} setLanguage={setLanguage} />
       <main className="flex-grow">
         <HeroSection content={content.hero} />
