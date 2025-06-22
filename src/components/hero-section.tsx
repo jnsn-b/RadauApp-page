@@ -46,7 +46,7 @@ export default function HeroSection({ content }: HeroSectionProps) {
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Image
-                    src={`/${index + 1}.png`}
+                    src={`/${index + 1}.jpeg`}
                     alt={`${content.imageAlt} Screenshot ${index + 1}`}
                     width={1290}
                     height={2796}
