@@ -46,12 +46,13 @@ export default function HeroSection({ content }: HeroSectionProps) {
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Image
-                    src={`https://placehold.co/1290x2796.png`}
+                    src={`/${index + 1}.png`}
                     alt={`${content.imageAlt} Screenshot ${index + 1}`}
                     width={1290}
                     height={2796}
                     className="rounded-2xl shadow-2xl"
                     data-ai-hint="app screenshot"
+                    priority={index < 3}
                   />
                 </div>
               </CarouselItem>

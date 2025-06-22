@@ -22,7 +22,7 @@ const translations = {
     },
     services: {
       title: "Was ist die RadauApp?",
-      description1: "Die nachhaltige Alternative zur ToniBox. Du hast noch ein altes iPhone 6s oder neuer zuhause? Perfekt! Mit RadauApp machst du daraus eine kinderleichte Musikbox für deine Kleinen.",
+      description1: "Die nachhaltige Alternative zur TonieBox. Du hast noch ein altes iPhone 6s oder neuer zuhause? Perfekt! Mit RadauApp machst du daraus eine kinderleichte Musikbox für deine Kleinen.",
       features: [
         { title: "Apple Music & eigene MP3s", description: "Greife auf die riesige Mediathek von Apple Music zu oder spiele deine eigenen MP3-Dateien ab." },
         { title: "Lieblings-Podcasts", description: "Binde die Lieblings-Hörspiele und Podcasts deiner Kinder direkt in die App ein." },
