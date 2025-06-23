@@ -24,7 +24,6 @@ const translations = {
         title: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
         person: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt"
     },
-    warning: "WICHTIG: Dies ist eine rechtliche Vorlage. Bitte ersetzen Sie die Platzhaltertexte durch Ihre eigenen, korrekten Angaben und lassen Sie diese von einem Anwalt prüfen. Wir übernehmen keine Haftung für die Richtigkeit und Vollständigkeit dieser Vorlage.",
     footer: {
       tagline: "Die nachhaltige Kinder-Jukebox.",
       contact: "Kontakt",
@@ -52,7 +51,6 @@ const translations = {
         title: "Responsible for the content according to § 55 para. 2 RStV",
         person: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt, Germany"
     },
-    warning: "IMPORTANT: This is a legal template. Please replace the placeholder texts with your own correct information and have it reviewed by a lawyer. We assume no liability for the accuracy and completeness of this template.",
     footer: {
       tagline: "The sustainable kids' jukebox.",
       contact: "Contact",
@@ -89,10 +87,6 @@ export default function ImpressumPage() {
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8">{content.title}</h1>
           
-          <div className="p-4 border-l-4 border-destructive bg-destructive/10 text-destructive mb-8 rounded-r-lg">
-            <p className="font-bold">{content.warning}</p>
-          </div>
-
           <div className="space-y-6 text-muted-foreground">
             <h2 className="text-2xl font-semibold font-headline text-foreground pt-4">{content.heading}</h2>
             <p className="whitespace-pre-wrap">{content.operator}</p>

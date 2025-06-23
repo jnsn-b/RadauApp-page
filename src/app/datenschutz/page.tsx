@@ -22,7 +22,6 @@ const translations = {
         { title: "4. Datenerfassung auf unserer Website", content: "Cookies: Unsere Internetseiten verwenden so genannte „Cookies“. Cookies sind kleine Textdateien und richten auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert. Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht. Permanente Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese selbst löschen oder eine automatische Löschung durch Ihren Webbrowser erfolgt.\n\nServer-Log-Dateien: Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage, IP-Adresse. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO." },
         { title: "5. Kontaktaufnahme", content: "Wenn Sie uns per E-Mail kontaktieren, wird Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist." }
     ],
-    warning: "WICHTIG: Dies ist eine Vorlage, die auf den gängigen Anforderungen der DSGVO basiert. Sie ersetzt keine Rechtsberatung. Bitte passen Sie die Inhalte (insbesondere die Kontaktdaten des Verantwortlichen) sorgfältig an und lassen Sie sie von einem Anwalt oder Datenschutzbeauftragten prüfen. Wir übernehmen keine Haftung für die Richtigkeit und Vollständigkeit.",
     footer: {
       tagline: "Die nachhaltige Kinder-Jukebox.",
       contact: "Kontakt",
@@ -48,7 +47,6 @@ const translations = {
         { title: "4. Data Collection on our Website", content: "Cookies: Our internet pages use so-called 'cookies'. Cookies are small text files and do not cause any damage to your end device. They are stored either temporarily for the duration of a session (session cookies) or permanently (permanent cookies) on your end device. Session cookies are automatically deleted at the end of your visit. Permanent cookies remain stored on your end device until you delete them yourself or an automatic deletion is carried out by your web browser.\n\nServer Log Files: The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are: browser type and browser version, operating system used, referrer URL, host name of the accessing computer, time of the server request, IP address. This data is not merged with other data sources. The collection of this data is based on Art. 6(1)(f) GDPR." },
         { title: "5. Contact", content: "If you contact us by e-mail, your inquiry including all resulting personal data (name, inquiry) will be stored and processed by us for the purpose of processing your request. We do not pass on this data without your consent. The processing of this data is based on Art. 6(1)(b) GDPR, provided that your inquiry is related to the fulfillment of a contract or is necessary for the performance of pre-contractual measures." }
     ],
-    warning: "IMPORTANT: This is a template based on the general requirements of the GDPR. It does not substitute for legal advice. Please carefully adapt the content (especially the contact details of the controller) and have it reviewed by a lawyer or data protection officer. We assume no liability for the accuracy and completeness of this template.",
     footer: {
       tagline: "The sustainable kids' jukebox.",
       contact: "Contact",
@@ -84,10 +82,6 @@ export default function DatenschutzPage() {
             {content.back_to_home}
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold font-headline mb-8">{content.title}</h1>
-          
-          <div className="p-4 border-l-4 border-destructive bg-destructive/10 text-destructive mb-8 rounded-r-lg">
-            <p className="font-bold whitespace-pre-wrap">{content.warning}</p>
-          </div>
 
           <div className="space-y-8 text-muted-foreground">
             {content.sections.map(section => (
