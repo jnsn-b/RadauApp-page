@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import type { LucideIcon } from "lucide-react";
 import { Car, Eye, Headphones, PiggyBank, Recycle, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 interface Benefit {
     title: string;
@@ -16,6 +17,7 @@ export interface BenefitsContent {
 
 interface BenefitsSectionProps {
     content: BenefitsContent;
+    ctaLink: string;
 }
 
 const benefitIcons: { [key: string]: LucideIcon } = {
@@ -27,7 +29,8 @@ const benefitIcons: { [key: string]: LucideIcon } = {
     ShieldCheck,
 };
 
-export default function BenefitsSection({ content }: BenefitsSectionProps) {
+export default function BenefitsSection({ content, ctaLink }: BenefitsSectionProps) {
+  const appStoreLink = "https://apps.apple.com/de/app/radauapp/id6745492017?l=en-GB";
   return (
     <section className="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-muted/50">
       <div className="max-w-6xl mx-auto">
@@ -54,6 +57,11 @@ export default function BenefitsSection({ content }: BenefitsSectionProps) {
                 </Card>
             )
           })}
+        </div>
+        <div className="mt-12 text-center">
+            <Link href={appStoreLink} className="text-primary hover:underline text-lg font-semibold">
+                {ctaLink}
+            </Link>
         </div>
       </div>
     </section>

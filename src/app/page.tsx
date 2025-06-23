@@ -206,7 +206,7 @@ export default function Home() {
         <HeroSection content={content.hero} language={language} />
         <ServicesSection content={content.services} />
         <WorkSection content={content.work} />
-        <BenefitsSection content={content.benefits} />
+        <BenefitsSection content={content.benefits} ctaLink={content.hero.ctaLink} />
         <CtaSection content={updatedCtaContent} />
       </main>
       <Footer content={content.footer} />
