@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
@@ -8,12 +9,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import { AppStoreCtaButton } from "./app-store-cta-button";
 
 interface HeroContent {
   subtitle: string;
   description: string;
   imageAlt: string;
+  ctaLink: string;
 }
 
 interface HeroSectionProps {
@@ -23,6 +24,7 @@ interface HeroSectionProps {
 
 export default function HeroSection({ content, language }: HeroSectionProps) {
   const langSuffix = language.toUpperCase();
+  const appStoreLink = "https://apps.apple.com/de/app/radauapp/id6745492017?l=en-GB";
 
   return (
     <section className="text-center py-16 md:py-24 px-4">
@@ -37,7 +39,9 @@ export default function HeroSection({ content, language }: HeroSectionProps) {
           {content.description}
         </p>
         <div className="mt-8">
-          <AppStoreCtaButton />
+            <Link href={appStoreLink} className="text-primary hover:underline text-lg font-semibold">
+                {content.ctaLink}
+            </Link>
         </div>
       </div>
       <div className="mt-12 max-w-6xl mx-auto">

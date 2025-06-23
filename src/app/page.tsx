@@ -19,7 +19,8 @@ const translations = {
     hero: {
       subtitle: "Die nachhaltige Kinder-Jukebox",
       description: "Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.",
-      imageAlt: "RadauApp auf einem iPhone"
+      imageAlt: "RadauApp auf einem iPhone",
+      ctaLink: "Überzeugt? Hol dir die App im App Store."
     },
     services: {
       title: "Was ist die RadauApp?",
@@ -29,7 +30,8 @@ const translations = {
         { title: "Lieblings-Podcasts", description: "Binde die Lieblings-Hörspiele und Podcasts deiner Kinder direkt in die App ein." },
         { title: "Kindgerechtes Webradio", description: "Füge sichere und unterhaltsame Webradio-Sender für Kinder hinzu." }
       ],
-      description2: "Die Bedienung ist bewusst einfach gehalten – ganz ohne Lesekenntnisse. Große Kacheln, intuitive Icons und keine Ablenkung. Einfach tippen – Musik läuft!"
+      description2: "Die Bedienung ist bewusst einfach gehalten – ganz ohne Lesekenntnisse. Große Kacheln, intuitive Icons und keine Ablenkung. Einfach tippen – Musik läuft!",
+      ctaLink: "Jetzt im App Store entdecken."
     },
     work: {
       title: "Elternmodus inklusive",
@@ -83,7 +85,8 @@ const translations = {
     hero: {
       subtitle: "The Sustainable Kids' Jukebox",
       description: "Turn your old iPhone into a smart music device for kids - without any reading required, but with full control in the parent area.",
-      imageAlt: "RadauApp on an iPhone"
+      imageAlt: "RadauApp on an iPhone",
+      ctaLink: "Convinced? Get the app on the App Store."
     },
     services: {
       title: "What is RadauApp?",
@@ -93,7 +96,8 @@ const translations = {
         { title: "Favorite Podcasts", description: "Integrate your children's favorite audiobooks and podcasts directly into the app." },
         { title: "Kid-Safe Web Radio", description: "Add safe and entertaining web radio stations for children." }
       ],
-      description2: "The controls are intentionally simple - no reading skills required. Large tiles, intuitive icons, and no distractions. Just tap - the music plays!"
+      description2: "The controls are intentionally simple - no reading skills required. Large tiles, intuitive icons, and no distractions. Just tap - the music plays!",
+      ctaLink: "Discover all features in the app – now on the App Store."
     },
     work: {
       title: "Parent Mode Included",

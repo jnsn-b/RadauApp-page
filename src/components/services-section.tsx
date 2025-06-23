@@ -1,5 +1,5 @@
 import { Music, Podcast, Radio } from "lucide-react";
-import { AppStoreCtaButton } from "./app-store-cta-button";
+import Link from "next/link";
 
 interface Feature {
     title: string;
@@ -11,6 +11,7 @@ interface ServicesContent {
     description1: string;
     features: Feature[];
     description2: string;
+    ctaLink: string;
 }
 
 interface ServicesSectionProps {
@@ -20,6 +21,7 @@ interface ServicesSectionProps {
 const featureIcons = [Music, Podcast, Radio];
 
 export default function ServicesSection({ content }: ServicesSectionProps) {
+  const appStoreLink = "https://apps.apple.com/de/app/radauapp/id6745492017?l=en-GB";
   return (
     <section className="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-muted/50">
       <div className="max-w-5xl mx-auto text-center">
@@ -45,7 +47,9 @@ export default function ServicesSection({ content }: ServicesSectionProps) {
           {content.description2}
         </p>
         <div className="mt-8">
-            <AppStoreCtaButton />
+            <Link href={appStoreLink} className="text-primary hover:underline text-lg font-semibold">
+                {content.ctaLink}
+            </Link>
         </div>
       </div>
     </section>
