@@ -52,7 +52,6 @@ export default function HeroSection({ content }: HeroSectionProps) {
                     height={2796}
                     className="rounded-2xl shadow-2xl"
                     data-ai-hint="app screenshot"
-                    priority={index < 3}
                   />
                 </div>
               </CarouselItem>
