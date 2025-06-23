@@ -143,7 +143,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background text-foreground">
       <Header language={language} setLanguage={setLanguage} />
       <main className="flex-grow">
-        <HeroSection content={content.hero} />
+        <HeroSection content={content.hero} language={language} />
         <ServicesSection content={content.services} />
         <WorkSection content={content.work} />
         <JournalSection content={content.journal} />

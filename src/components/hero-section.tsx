@@ -17,9 +17,12 @@ interface HeroContent {
 
 interface HeroSectionProps {
   content: HeroContent;
+  language: 'de' | 'en';
 }
 
-export default function HeroSection({ content }: HeroSectionProps) {
+export default function HeroSection({ content, language }: HeroSectionProps) {
+  const langSuffix = language.toUpperCase();
+
   return (
     <section className="text-center py-16 md:py-24 px-4">
       <div className="max-w-4xl mx-auto">
@@ -46,7 +49,7 @@ export default function HeroSection({ content }: HeroSectionProps) {
               <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <Image
-                    src={`/${index + 1}.jpg`}
+                    src={`/${index + 1}_${langSuffix}.webp`}
                     alt={`${content.imageAlt} Screenshot ${index + 1}`}
                     width={1290}
                     height={2796}
