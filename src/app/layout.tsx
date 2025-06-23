@@ -19,6 +19,9 @@ const kalam = Kalam({
 export const metadata: Metadata = {
   title: 'RadauApp - Die nachhaltige Kinder-Jukebox',
   description: 'Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.',
+  icons: {
+    icon: '/RadauAppLogo.png',
+  },
 };
 
 export default function RootLayout({
