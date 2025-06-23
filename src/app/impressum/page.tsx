@@ -16,13 +16,13 @@ const translations = {
     title: "Impressum",
     back_to_home: "Zurück zur Startseite",
     heading: "Angaben gemäß § 5 TMG",
-    operator: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt",
+    operator: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen",
     contact: {
       title: "Kontakt",
     },
     responsibility: {
         title: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
-        person: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt"
+        person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen"
     },
     footer: {
       tagline: "Die nachhaltige Kinder-Jukebox.",
@@ -43,13 +43,13 @@ const translations = {
     title: "Imprint",
     back_to_home: "Back to Home",
     heading: "Information according to § 5 TMG",
-    operator: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt, Germany",
+    operator: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Germany",
     contact: {
       title: "Contact",
     },
     responsibility: {
         title: "Responsible for the content according to § 55 para. 2 RStV",
-        person: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt, Germany"
+        person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Germany"
     },
     footer: {
       tagline: "The sustainable kids' jukebox.",
