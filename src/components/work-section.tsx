@@ -32,19 +32,14 @@ export default function WorkSection({ content }: WorkSectionProps) {
       const rect = imageContainerRef.current.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
       
-      // The current vertical center of the image in the viewport
       const imageCenterY = rect.top + rect.height / 2;
       
-      // Define the transition zone in the middle of the viewport.
-      // Let's use a zone that is half of the viewport's height.
       const transitionZoneHeight = viewportHeight / 2;
       const transitionStartsAt = viewportHeight / 2 + transitionZoneHeight / 2;
       const transitionEndsAt = viewportHeight / 2 - transitionZoneHeight / 2;
 
-      // Calculate the progress of the image's center through the transition zone.
       const progressRaw = (transitionStartsAt - imageCenterY) / (transitionStartsAt - transitionEndsAt);
       
-      // Clamp the progress between 0 and 1
       const progress = Math.max(0, Math.min(1, progressRaw));
       
       setImageOpacity(progress);
@@ -87,20 +82,20 @@ export default function WorkSection({ content }: WorkSectionProps) {
               <Image
                 src="/kid.webp"
                 alt={content.imageAlt}
-                width={500}
-                height={500}
-                className="rounded-2xl shadow-xl absolute inset-0 transition-opacity duration-500 ease-in-out object-cover"
+                fill
+                className="rounded-2xl shadow-xl transition-opacity duration-500 ease-in-out object-cover"
                 style={{ opacity: 1 - imageOpacity }}
                 data-ai-hint="child using tablet"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <Image
                 src="/usage.webp"
                 alt="App usage screen"
-                width={500}
-                height={500}
-                className="rounded-2xl shadow-xl absolute inset-0 transition-opacity duration-500 ease-in-out object-cover"
+                fill
+                className="rounded-2xl shadow-xl transition-opacity duration-500 ease-in-out object-cover"
                 style={{ opacity: imageOpacity }}
                 data-ai-hint="app usage dashboard"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
         </div>
