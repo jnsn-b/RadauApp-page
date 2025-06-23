@@ -10,6 +10,7 @@ import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import CookieBanner from "@/components/cookie-banner";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
+import Head from "next/head";
 
 type Language = "de" | "en";
 
@@ -113,7 +114,7 @@ const translations = {
     cta: {
       title: "Frequently Asked Questions",
       faqs: [
-        { question: "How do I lock the iPhone so that only one app can be used?", answer: <>With the iOS feature 'Guided Access' (under Settings &gt; Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an <a href="https://support.apple.com/de-de/111795" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">official guide</a> for this.</> },
+        { question: "How do I lock the iPhone so that only one app can be used?", answer: <>With the iOS feature 'Guided Access' (under Settings &gt; Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an <a href="https://support.apple.com/en-us/111795" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">official guide</a> for this.</> },
         { question: "Does the app also work on the iPad?", answer: "An iPad version is planned and will be available soon, so that discarded devices can also be given a second life here!" },
         { question: "Which devices are supported?", answer: "RadauApp runs on any iPhone from the 6s model with iOS 15 or newer. This way, you can give older devices a meaningful new life." },
         { question: "How do I manage the playlists?", answer: "Music playlists are managed in iTunes or the Apple Music app. There, you can subscribe to and manage songs in playlists. The RadauApp retrieves these playlists and displays them in a child-friendly way. In parent mode, you can edit the playlists' appearance." },
@@ -138,20 +139,65 @@ const translations = {
   }
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "RadauApp",
+  "operatingSystem": "iOS",
+  "applicationCategory": "MusicApplication",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8", // Example value
+    "ratingCount": "88" // Example value
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "description": "Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.",
+  "url": "https://apps.apple.com/de/app/radauapp/id6745492017?l=en-GB"
+};
+
 export default function Home() {
   const [language, setLanguage] = useState<Language>("de");
   const content = useMemo(() => translations[language], [language]);
   const { shouldShowBanner, giveConsent } = useCookieConsent();
 
+  const faqLink = language === 'de' ? "https://support.apple.com/de-de/111795" : "https://support.apple.com/en-us/111795";
+  const updatedFaqs = content.cta.faqs.map(faq => {
+      if (faq.question.includes("sperre ich das iPhone") || faq.question.includes("lock the iPhone")) {
+          return {
+              ...faq,
+              answer: <>
+                  {language === 'de' ? 'Mit der iOS-Funktion „Geführter Zugriff“ (unter Einstellungen > Bedienungshilfen). Damit kann das Gerät auf die RadauApp beschränkt werden. Apple bietet hierzu eine ' : 'With the iOS feature \'Guided Access\' (under Settings > Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an '}
+                  <a href={faqLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {language === 'de' ? 'offizielle Anleitung' : 'official guide'}
+                  </a>
+                  .
+              </>
+          };
+      }
+      return faq;
+  });
+
+  const updatedCtaContent = { ...content.cta, faqs: updatedFaqs };
+
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
+       <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </Head>
       <Header language={language} setLanguage={setLanguage} />
       <main className="flex-grow">
         <HeroSection content={content.hero} language={language} />
         <ServicesSection content={content.services} />
         <WorkSection content={content.work} />
         <JournalSection content={content.journal} />
-        <CtaSection content={content.cta} />
+        <CtaSection content={updatedCtaContent} />
       </main>
       <Footer content={content.footer} />
       {shouldShowBanner && (

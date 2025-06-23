@@ -11,7 +11,7 @@ interface Faq {
     answer: ReactNode;
 }
 
-interface CtaContent {
+export interface CtaContent {
     title: string;
     faqs: Faq[];
 }
@@ -28,8 +28,8 @@ export default function CtaSection({ content }: CtaSectionProps) {
           {content.title}
         </h2>
         <Accordion type="single" collapsible className="w-full">
-            {content.faqs.map(faq => (
-                <AccordionItem key={faq.question} value={faq.question}>
+            {content.faqs.map((faq, i) => (
+                <AccordionItem key={i} value={faq.question}>
                     <AccordionTrigger className="text-lg text-left">{faq.question}</AccordionTrigger>
                     <AccordionContent className="text-base text-muted-foreground">
                     {faq.answer}

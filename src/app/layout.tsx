@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import { Inter, Kalam } from 'next/font/google';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
@@ -16,13 +16,56 @@ const kalam = Kalam({
   variable: '--font-kalam',
 });
 
+// IMPORTANT: Please replace this with your actual domain.
+const siteUrl = "https://radau.app";
+
 export const metadata: Metadata = {
-  title: 'RadauApp - Die nachhaltige Kinder-Jukebox',
-  description: 'Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.',
+  metadataBase: new URL(siteUrl),
+  title: {
+    template: '%s | RadauApp',
+    default: 'RadauApp - Die nachhaltige Kinder-Jukebox',
+  },
+  description: 'Mach aus deinem alten iPhone eine nachhaltige Musikbox für Kinder. Die RadauApp ist die smarte Alternative zur Toniebox – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.',
+  keywords: ["Kinder Jukebox", "Musikbox Kinder", "Toniebox Alternative", "Hörspielbox", "Kinder-App", "nachhaltig", "altes iPhone", "Apple Music", "Kinder-Hörspiele", "Kindermusik-App", "Kinder-Podcasts"],
+  creator: 'RadauApp',
+  authors: [{ name: 'RadauApp', url: siteUrl }],
   icons: {
     icon: '/RadauAppLogo.png',
     shortcut: '/RadauAppLogo.png',
     apple: '/RadauAppLogo.png',
+  },
+  openGraph: {
+    title: 'RadauApp - Die nachhaltige Kinder-Jukebox',
+    description: 'Verwandle dein altes iPhone in eine sichere & nachhaltige Musikbox für Kinder. Die smarte Alternative zur Toniebox.',
+    url: siteUrl,
+    siteName: 'RadauApp',
+    images: [
+      {
+        url: '/og-image.png', // IMPORTANT: Create a file named og-image.png (1200x630px) in your /public folder
+        width: 1200,
+        height: 630,
+        alt: 'RadauApp auf einem iPhone in einer verspielten Umgebung'
+      },
+    ],
+    locale: 'de_DE',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'RadauApp - Die nachhaltige Kinder-Jukebox',
+    description: 'Verwandle dein altes iPhone in eine sichere & nachhaltige Musikbox für Kinder. Die smarte Alternative zur Toniebox.',
+    images: ['/og-image.png'], // IMPORTANT: Create a file named og-image.png (1200x630px) in your /public folder
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
@@ -32,7 +75,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${kalam.variable}`}>
+    <html lang="de" className={`${inter.variable} ${kalam.variable}`}>
       <head />
       <body className="font-body antialiased">
         {children}

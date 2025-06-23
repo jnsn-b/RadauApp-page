@@ -7,6 +7,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import CookieBanner from "@/components/cookie-banner";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
+import Head from "next/head";
 
 type Language = "de" | "en";
 
@@ -68,6 +69,9 @@ export default function DatenschutzPage() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
+      <Head>
+        <title>{content.title} | RadauApp</title>
+      </Head>
       <Header language={language} setLanguage={setLanguage} />
       <main className="flex-grow py-12 md:py-20 px-4 md:px-8 lg:px-16">
         <div className="max-w-3xl mx-auto">
