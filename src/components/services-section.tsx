@@ -1,4 +1,5 @@
 import { Music, Podcast, Radio } from "lucide-react";
+import { AppStoreCtaButton } from "./app-store-cta-button";
 
 interface Feature {
     title: string;
@@ -43,6 +44,9 @@ export default function ServicesSection({ content }: ServicesSectionProps) {
         <p className="mt-12 text-lg text-muted-foreground max-w-3xl mx-auto">
           {content.description2}
         </p>
+        <div className="mt-8">
+            <AppStoreCtaButton />
+        </div>
       </div>
     </section>
   );

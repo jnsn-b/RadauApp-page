@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import { AppStoreCtaButton } from "./app-store-cta-button";
 
 interface HeroContent {
   subtitle: string;
@@ -35,6 +36,9 @@ export default function HeroSection({ content, language }: HeroSectionProps) {
         <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
           {content.description}
         </p>
+        <div className="mt-8">
+          <AppStoreCtaButton />
+        </div>
       </div>
       <div className="mt-12 max-w-6xl mx-auto">
         <Carousel 
