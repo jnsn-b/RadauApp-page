@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import WorkSection from "@/components/work-section";
+import BenefitsSection from "@/components/benefits-section";
 import JournalSection from "@/components/journal-section";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
@@ -40,6 +41,15 @@ const translations = {
         { text: "Inhalte hinzufügen oder löschen" }
       ],
       imageAlt: "Elternmodus in der RadauApp"
+    },
+    benefits: {
+        title: "Mehr als nur Musik",
+        description: "Die RadauApp ist der perfekte Begleiter für den Familienalltag – entwickelt, um die kleinen und großen Herausforderungen unterwegs zu meistern.",
+        benefits: [
+            { title: "Entspannte Autofahrten", description: "Ihr Kind wählt selbstständig seine Unterhaltung aus. Das bedeutet weniger Ablenkung für Sie und kein Gequengel von der Rückbank.", icon: "Car" },
+            { title: "Wertvolle Bildschirmzeit", description: "Keine fesselnden Videos, nur eine simple Anzeige. Das schont die Augen und fördert die Fantasie durch reines Zuhören.", icon: "Eye" },
+            { title: "Immer & überall dabei", description: "Ein altes iPhone und Kopfhörer genügen. Kompakt und leicht passt die RadauApp in jeden Rucksack – ohne sperrige Zusatzgeräte.", icon: "Headphones" }
+        ]
     },
     journal: {
       title: "Warum RadauApp?",
@@ -101,6 +111,15 @@ const translations = {
         { text: "Add or delete content" }
       ],
       imageAlt: "Parent mode in the RadauApp"
+    },
+    benefits: {
+        title: "More Than Just Music",
+        description: "RadauApp is the perfect companion for family life – designed to master the small and large challenges on the go.",
+        benefits: [
+            { title: "Relaxed Car Rides", description: "Your child independently selects their entertainment. This means less distraction for you and no whining from the back seat.", icon: "Car" },
+            { title: "Valuable Screen Time", description: "No captivating videos, just a simple display. This is easy on the eyes and promotes imagination through pure listening.", icon: "Eye" },
+            { title: "Always & Everywhere", description: "An old iPhone and headphones are all you need. Compact and lightweight, RadauApp fits into any backpack – without bulky extra devices.", icon: "Headphones" }
+        ]
     },
     journal: {
       title: "Why RadauApp?",
@@ -196,6 +215,7 @@ export default function Home() {
         <HeroSection content={content.hero} language={language} />
         <ServicesSection content={content.services} />
         <WorkSection content={content.work} />
+        <BenefitsSection content={content.benefits} />
         <JournalSection content={content.journal} />
         <CtaSection content={updatedCtaContent} />
       </main>
