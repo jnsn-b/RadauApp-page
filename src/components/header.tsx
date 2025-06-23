@@ -37,6 +37,15 @@ const AppStoreButton = () => (
       width={120}
       height={40}
       priority
+      className="hidden h-10 w-auto sm:block"
+    />
+    <Image
+      src="/AppStoreButton.svg"
+      alt="Download on the App Store"
+      width={100}
+      height={33}
+      priority
+      className="block h-9 w-auto sm:hidden"
     />
   </a>
 );
@@ -51,35 +60,35 @@ interface HeaderProps {
 export default function Header({ language, setLanguage }: HeaderProps) {
 
   return (
-    <header className="py-4 px-4 md:px-8 lg:px-16 flex justify-between items-center bg-background/80 backdrop-blur-sm sticky top-0 z-50 border-b border-border/50">
-      <Link href="/" className="flex items-center gap-2 text-2xl font-bold font-headline text-primary">
-        <Volume2 className="h-7 w-7" />
+    <header className="py-4 px-4 sm:px-6 md:px-8 lg:px-16 flex justify-between items-center bg-background/80 backdrop-blur-sm sticky top-0 z-50 border-b border-border/50">
+      <Link href="/" className="flex items-center gap-2 text-xl sm:text-2xl font-bold font-headline text-primary">
+        <Volume2 className="h-6 w-6 sm:h-7 sm:w-7" />
         RadauApp
       </Link>
 
-      <div className="hidden md:block">
+      <div className="flex items-center gap-2 sm:gap-4">
         <AppStoreButton />
-      </div>
 
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="flex items-center gap-2">
-            {language === 'de' ? <GermanFlag /> : <UKFlag />}
-            <span className="uppercase">{language}</span>
-            <ChevronDown className="h-4 w-4" />
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent align="end">
-          <DropdownMenuItem onSelect={() => setLanguage('de')} className="gap-2 cursor-pointer">
-            <GermanFlag />
-            <span>Deutsch</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem onSelect={() => setLanguage('en')} className="gap-2 cursor-pointer">
-            <UKFlag />
-            <span>English</span>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </DropdownMenu>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" className="flex items-center gap-2 p-2.5 sm:p-2 sm:px-3">
+              {language === 'de' ? <GermanFlag /> : <UKFlag />}
+              <span className="uppercase hidden sm:inline">{language}</span>
+              <ChevronDown className="h-4 w-4 hidden sm:block" />
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuItem onSelect={() => setLanguage('de')} className="gap-2 cursor-pointer">
+              <GermanFlag />
+              <span>Deutsch</span>
+            </DropdownMenuItem>
+            <DropdownMenuItem onSelect={() => setLanguage('en')} className="gap-2 cursor-pointer">
+              <UKFlag />
+              <span>English</span>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
     </header>
   );
 }
