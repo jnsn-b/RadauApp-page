@@ -6,7 +6,6 @@ import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import WorkSection from "@/components/work-section";
 import BenefitsSection from "@/components/benefits-section";
-import JournalSection from "@/components/journal-section";
 import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import CookieBanner from "@/components/cookie-banner";
@@ -44,21 +43,15 @@ const translations = {
     },
     benefits: {
         title: "Mehr als nur Musik",
-        description: "Die RadauApp ist der perfekte Begleiter für den Familienalltag – entwickelt, um die kleinen und großen Herausforderungen unterwegs zu meistern.",
+        description: "Die RadauApp ist der perfekte Begleiter für den Familienalltag – entwickelt, um die kleinen und großen Herausforderungen zu meistern und dabei nachhaltig und sicher zu sein.",
         benefits: [
             { title: "Entspannte Autofahrten", description: "Ihr Kind wählt selbstständig seine Unterhaltung aus. Das bedeutet weniger Ablenkung für Sie und kein Gequengel von der Rückbank.", icon: "Car" },
             { title: "Wertvolle Bildschirmzeit", description: "Keine fesselnden Videos, nur eine simple Anzeige. Das schont die Augen und fördert die Fantasie durch reines Zuhören.", icon: "Eye" },
-            { title: "Immer & überall dabei", description: "Ein altes iPhone und Kopfhörer genügen. Kompakt und leicht passt die RadauApp in jeden Rucksack – ohne sperrige Zusatzgeräte.", icon: "Headphones" }
+            { title: "Immer & überall dabei", description: "Ein altes iPhone und Kopfhörer genügen. Kompakt und leicht passt die RadauApp in jeden Rucksack – ohne sperrige Zusatzgeräte.", icon: "Headphones" },
+            { title: "Kosten sparen", description: "Spare dir teure Spezial-Hardware wie TonieBox & Co. und nutze, was du schon hast.", icon: "PiggyBank" },
+            { title: "Nachhaltig", description: "Gib deinem alten iPhone ein zweites Leben, statt es in der Schublade verstauben zu lassen oder wegzuwerfen.", icon: "Recycle" },
+            { title: "Sicher & Privat", description: "Volle Kontrolle über die Inhalte und keine Cloudbindung. Deine Daten bleiben bei dir.", icon: "ShieldCheck" }
         ]
-    },
-    journal: {
-      title: "Warum RadauApp?",
-      benefits: [
-        { title: "Kosten sparen", description: "Spare dir teure Spezial-Hardware wie TonieBox & Co. und nutze, was du schon hast." },
-        { title: "Nachhaltig", description: "Gib deinem alten iPhone ein zweites Leben, statt es in der Schublade verstauben zu lassen oder wegzuwerfen." },
-        { title: "Sicher & Privat", description: "Volle Kontrolle über die Inhalte und keine Cloudbindung. Deine Daten bleiben bei dir." }
-      ],
-      outro: "RadauApp – weil gute Musik nachhaltiger sein kann."
     },
     cta: {
       title: "Häufige Fragen",
@@ -114,21 +107,15 @@ const translations = {
     },
     benefits: {
         title: "More Than Just Music",
-        description: "RadauApp is the perfect companion for family life – designed to master the small and large challenges on the go.",
+        description: "RadauApp is the perfect companion for family life – designed to master the small and large challenges while being sustainable and safe.",
         benefits: [
             { title: "Relaxed Car Rides", description: "Your child independently selects their entertainment. This means less distraction for you and no whining from the back seat.", icon: "Car" },
             { title: "Valuable Screen Time", description: "No captivating videos, just a simple display. This is easy on the eyes and promotes imagination through pure listening.", icon: "Eye" },
-            { title: "Always & Everywhere", description: "An old iPhone and headphones are all you need. Compact and lightweight, RadauApp fits into any backpack – without bulky extra devices.", icon: "Headphones" }
+            { title: "Always & Everywhere", description: "An old iPhone and headphones are all you need. Compact and lightweight, RadauApp fits into any backpack – without bulky extra devices.", icon: "Headphones" },
+            { title: "Save Money", description: "Save on expensive special hardware like TonieBox & Co. and use what you already have.", icon: "PiggyBank" },
+            { title: "Sustainable", description: "Give your old iPhone a second life instead of letting it gather dust in a drawer or throwing it away.", icon: "Recycle" },
+            { title: "Secure & Private", description: "Full control over content and no cloud dependency. Your data stays with you.", icon: "ShieldCheck" }
         ]
-    },
-    journal: {
-      title: "Why RadauApp?",
-      benefits: [
-        { title: "Save Money", description: "Save on expensive special hardware like TonieBox & Co. and use what you already have." },
-        { title: "Sustainable", description: "Give your old iPhone a second life instead of letting it gather dust in a drawer or throwing it away." },
-        { title: "Secure & Private", description: "Full control over content and no cloud dependency. Your data stays with you." }
-      ],
-      outro: "RadauApp – because good music can be more sustainable."
     },
     cta: {
       title: "Frequently Asked Questions",
@@ -216,7 +203,6 @@ export default function Home() {
         <ServicesSection content={content.services} />
         <WorkSection content={content.work} />
         <BenefitsSection content={content.benefits} />
-        <JournalSection content={content.journal} />
         <CtaSection content={updatedCtaContent} />
       </main>
       <Footer content={content.footer} />

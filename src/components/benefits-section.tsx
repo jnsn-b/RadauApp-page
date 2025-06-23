@@ -1,11 +1,11 @@
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import type { LucideIcon } from "lucide-react";
-import { Car, Eye, Headphones } from "lucide-react";
+import { Car, Eye, Headphones, PiggyBank, Recycle, ShieldCheck } from "lucide-react";
 
 interface Benefit {
     title: string;
     description: string;
-    icon: 'Car' | 'Eye' | 'Headphones';
+    icon: 'Car' | 'Eye' | 'Headphones' | 'PiggyBank' | 'Recycle' | 'ShieldCheck';
 }
 
 export interface BenefitsContent {
@@ -22,6 +22,9 @@ const benefitIcons: { [key: string]: LucideIcon } = {
     Car,
     Eye,
     Headphones,
+    PiggyBank,
+    Recycle,
+    ShieldCheck,
 };
 
 export default function BenefitsSection({ content }: BenefitsSectionProps) {
@@ -43,7 +46,7 @@ export default function BenefitsSection({ content }: BenefitsSectionProps) {
                 <Card key={benefit.title} className="bg-card hover:shadow-xl transition-shadow duration-300 text-center">
                   <CardHeader className="items-center p-8">
                     <div className="bg-primary/10 p-4 rounded-full mb-4">
-                       <Icon className="h-10 w-10 text-primary" />
+                       {Icon && <Icon className="h-10 w-10 text-primary" />}
                     </div>
                     <CardTitle className="font-headline text-2xl">{benefit.title}</CardTitle>
                     <CardDescription className="pt-2 text-base">{benefit.description}</CardDescription>
