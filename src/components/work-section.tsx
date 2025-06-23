@@ -83,13 +83,13 @@ export default function WorkSection({ content }: WorkSectionProps) {
           </ul>
         </div>
         <div className="order-1 md:order-2 flex justify-center">
-            <div ref={imageContainerRef} className="relative w-[500px] h-[600px]">
+            <div ref={imageContainerRef} className="relative w-[500px] h-[500px]">
               <Image
                 src="/kid.webp"
                 alt={content.imageAlt}
                 width={500}
-                height={600}
-                className="rounded-2xl shadow-xl absolute inset-0 transition-opacity duration-500 ease-in-out"
+                height={500}
+                className="rounded-2xl shadow-xl absolute inset-0 transition-opacity duration-500 ease-in-out object-cover"
                 style={{ opacity: 1 - imageOpacity }}
                 data-ai-hint="child using tablet"
               />
@@ -97,8 +97,8 @@ export default function WorkSection({ content }: WorkSectionProps) {
                 src="/usage.webp"
                 alt="App usage screen"
                 width={500}
-                height={600}
-                className="rounded-2xl shadow-xl absolute inset-0 transition-opacity duration-500 ease-in-out"
+                height={500}
+                className="rounded-2xl shadow-xl absolute inset-0 transition-opacity duration-500 ease-in-out object-cover"
                 style={{ opacity: imageOpacity }}
                 data-ai-hint="app usage dashboard"
               />
