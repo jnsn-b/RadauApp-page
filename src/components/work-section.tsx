@@ -32,18 +32,26 @@ export default function WorkSection({ content }: WorkSectionProps) {
       const rect = imageContainerRef.current.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
       
-      const startY = viewportHeight * 0.75;
-      const endY = viewportHeight * 0.25;
+      // The current vertical center of the image in the viewport
+      const imageCenterY = rect.top + rect.height / 2;
+      
+      // Define the transition zone in the middle of the viewport.
+      // Let's use a zone that is half of the viewport's height.
+      const transitionZoneHeight = viewportHeight / 2;
+      const transitionStartsAt = viewportHeight / 2 + transitionZoneHeight / 2;
+      const transitionEndsAt = viewportHeight / 2 - transitionZoneHeight / 2;
 
-      const scrollDistance = startY - endY;
-      const progressRaw = (startY - rect.top) / scrollDistance;
+      // Calculate the progress of the image's center through the transition zone.
+      const progressRaw = (transitionStartsAt - imageCenterY) / (transitionStartsAt - transitionEndsAt);
+      
+      // Clamp the progress between 0 and 1
       const progress = Math.max(0, Math.min(1, progressRaw));
       
       setImageOpacity(progress);
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll();
+    handleScroll(); // Run on initial load
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
