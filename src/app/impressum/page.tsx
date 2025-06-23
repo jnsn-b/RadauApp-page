@@ -24,7 +24,7 @@ const translations = {
         title: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
         person: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt"
     },
-    warning: "WICHTIG: Dies ist nur eine Vorlage. Bitte ersetzen Sie die Platzhaltertexte durch Ihre eigenen, korrekten rechtlichen Informationen. Wir übernehmen keine Haftung für die Richtigkeit und Vollständigkeit dieser Vorlage.",
+    warning: "WICHTIG: Dies ist eine rechtliche Vorlage. Bitte ersetzen Sie die Platzhaltertexte durch Ihre eigenen, korrekten Angaben und lassen Sie diese von einem Anwalt prüfen. Wir übernehmen keine Haftung für die Richtigkeit und Vollständigkeit dieser Vorlage.",
     footer: {
       tagline: "Die nachhaltige Kinder-Jukebox.",
       contact: "Kontakt",
@@ -52,7 +52,7 @@ const translations = {
         title: "Responsible for the content according to § 55 para. 2 RStV",
         person: "Max Mustermann\nMusterstraße 1\n12345 Musterstadt, Germany"
     },
-    warning: "IMPORTANT: This is a template. Please replace the placeholder texts with your own correct legal information. We assume no liability for the accuracy and completeness of this template.",
+    warning: "IMPORTANT: This is a legal template. Please replace the placeholder texts with your own correct information and have it reviewed by a lawyer. We assume no liability for the accuracy and completeness of this template.",
     footer: {
       tagline: "The sustainable kids' jukebox.",
       contact: "Contact",
