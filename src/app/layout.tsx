@@ -21,6 +21,8 @@ export const metadata: Metadata = {
   description: 'Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.',
   icons: {
     icon: '/RadauAppLogo.png',
+    shortcut: '/RadauAppLogo.png',
+    apple: '/RadauAppLogo.png',
   },
 };
 
