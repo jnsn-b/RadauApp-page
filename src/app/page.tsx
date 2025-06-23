@@ -52,7 +52,7 @@ const translations = {
     cta: {
       title: "Häufige Fragen",
       faqs: [
-        { question: "Wie sperre ich das iPhone, dass nur noch eine App verwendbar ist?", answer: "Mit der iOS-Funktion „Geführter Zugriff“ (unter Einstellungen > Bedienungshilfen). Damit kann das Gerät auf die RadauApp beschränkt werden. Apple bietet hierzu eine offizielle Anleitung." },
+        { question: "Wie sperre ich das iPhone, dass nur noch eine App verwendbar ist?", answer: <>Mit der iOS-Funktion „Geführter Zugriff“ (unter Einstellungen &gt; Bedienungshilfen). Damit kann das Gerät auf die RadauApp beschränkt werden. Apple bietet hierzu eine <a href="https://support.apple.com/de-de/111795" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">offizielle Anleitung</a>.</> },
         { question: "Wie verwalte ich die Playlisten?", answer: "Die Musikplaylists werden in iTunes bzw. der Apple Music App verwaltet. Dort können Lieder in Playlisten abonniert und verwaltet werden. Die RadauApp ruft diese Playlisten ab und stellt diese kindgerecht dar. Im Elternmodus kannst du die Erscheinungsbilder der Playlisten bearbeiten." },
         { question: "Wie kann ich eigene Musik nutzen?", answer: "Du kannst eigene MP3-Dateien über iTunes auf deinem Mac oder Computer mit deinem Handy synchronisieren. Sobald die Songs oder Hörspiele verfügbar sind, können sie über die RadauApp gesteuert werden." },
         { question: "Geht auch Spotify?", answer: "Derzeit leider nicht. RadauApp unterstützt Apple Music und lokale Dateien, nicht aber Spotify, da sich Spotify nicht über eine externe App steuern lässt." }
@@ -111,7 +111,7 @@ const translations = {
     cta: {
       title: "Frequently Asked Questions",
       faqs: [
-        { question: "How do I lock the iPhone so that only one app can be used?", answer: "With the iOS feature 'Guided Access' (under Settings > Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an official guide for this." },
+        { question: "How do I lock the iPhone so that only one app can be used?", answer: <>With the iOS feature 'Guided Access' (under Settings &gt; Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an <a href="https://support.apple.com/de-de/111795" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">official guide</a> for this.</> },
         { question: "How do I manage the playlists?", answer: "Music playlists are managed in iTunes or the Apple Music app. There, you can subscribe to and manage songs in playlists. The RadauApp retrieves these playlists and displays them in a child-friendly way. In parent mode, you can edit the playlists' appearance." },
         { question: "How can I use my own music?", answer: "You can sync your own MP3 files to your phone via iTunes on your Mac or computer. Once the songs or audiobooks are available, they can be controlled via the RadauApp." },
         { question: "Does it work with Spotify?", answer: "Unfortunately not at the moment. RadauApp supports Apple Music and local files, but not Spotify, as Spotify cannot be controlled by an external app." }

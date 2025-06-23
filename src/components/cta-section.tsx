@@ -4,10 +4,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import type { ReactNode } from "react";
 
 interface Faq {
     question: string;
-    answer: string;
+    answer: ReactNode;
 }
 
 interface CtaContent {
