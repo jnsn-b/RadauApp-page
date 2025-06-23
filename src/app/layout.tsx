@@ -1,6 +1,20 @@
 import type {Metadata} from 'next';
+import { Inter, Kalam } from 'next/font/google';
 import { Toaster } from "@/components/ui/toaster";
 import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const kalam = Kalam({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  display: 'swap',
+  variable: '--font-kalam',
+});
 
 export const metadata: Metadata = {
   title: 'RadauApp - Die nachhaltige Kinder-Jukebox',
@@ -13,12 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en" className={`${inter.variable} ${kalam.variable}`}>
+      <head />
       <body className="font-body antialiased">
         {children}
         <Toaster />
