@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
@@ -19,7 +19,6 @@ const translations = {
       subtitle: "Die nachhaltige Kinder-Jukebox",
       description: "Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.",
       imageAlt: "RadauApp auf einem iPhone",
-      ctaLink: "Überzeugt? Hol dir die App im App Store."
     },
     services: {
       title: "Was ist die RadauApp?",
@@ -52,7 +51,8 @@ const translations = {
             { title: "Kosten sparen", description: "Spare dir teure Spezial-Hardware wie TonieBox & Co. und nutze, was du schon hast.", icon: "PiggyBank" },
             { title: "Nachhaltig", description: "Gib deinem alten iPhone ein zweites Leben, statt es in der Schublade verstauben zu lassen oder wegzuwerfen.", icon: "Recycle" },
             { title: "Sicher & Privat", description: "Volle Kontrolle über die Inhalte und keine Cloudbindung. Deine Daten bleiben bei dir.", icon: "ShieldCheck" }
-        ]
+        ],
+        ctaLink: "Überzeugt? Hol dir die App im App Store."
     },
     cta: {
       title: "Häufige Fragen",
@@ -85,7 +85,6 @@ const translations = {
       subtitle: "The Sustainable Kids' Jukebox",
       description: "Turn your old iPhone into a smart music device for kids - without any reading required, but with full control in the parent area.",
       imageAlt: "RadauApp on an iPhone",
-      ctaLink: "Convinced? Get the app on the App Store."
     },
     services: {
       title: "What is RadauApp?",
@@ -118,7 +117,8 @@ const translations = {
             { title: "Save Money", description: "Save on expensive special hardware like TonieBox & Co. and use what you already have.", icon: "PiggyBank" },
             { title: "Sustainable", description: "Give your old iPhone a second life instead of letting it gather dust in a drawer or throwing it away.", icon: "Recycle" },
             { title: "Secure & Private", description: "Full control over content and no cloud dependency. Your data stays with you.", icon: "ShieldCheck" }
-        ]
+        ],
+        ctaLink: "Convinced? Get the app on the App Store."
     },
     cta: {
       title: "Frequently Asked Questions",
@@ -173,6 +173,15 @@ export default function Home() {
   const content = useMemo(() => translations[language], [language]);
   const { shouldShowBanner, giveConsent } = useCookieConsent();
 
+  useEffect(() => {
+    const userLang = navigator.language || (navigator as any).userLanguage;
+    if (userLang.startsWith('de')) {
+      setLanguage('de');
+    } else {
+      setLanguage('en');
+    }
+  }, []);
+
   const faqLink = language === 'de' ? "https://support.apple.com/de-de/111795" : "https://support.apple.com/en-us/111795";
   const updatedFaqs = content.cta.faqs.map(faq => {
       if (faq.question.includes("sperre ich das iPhone") || faq.question.includes("lock the iPhone")) {
@@ -203,7 +212,7 @@ export default function Home() {
         <HeroSection content={content.hero} language={language} />
         <ServicesSection content={content.services} />
         <WorkSection content={content.work} />
-        <BenefitsSection content={content.benefits} ctaLink={content.hero.ctaLink} />
+        <BenefitsSection content={content.benefits} />
         <CtaSection content={updatedCtaContent} />
       </main>
       <Footer content={content.footer} />

@@ -13,11 +13,11 @@ export interface BenefitsContent {
     title: string;
     description: string;
     benefits: Benefit[];
+    ctaLink: string;
 }
 
 interface BenefitsSectionProps {
     content: BenefitsContent;
-    ctaLink: string;
 }
 
 const benefitIcons: { [key: string]: LucideIcon } = {
@@ -29,7 +29,7 @@ const benefitIcons: { [key: string]: LucideIcon } = {
     ShieldCheck,
 };
 
-export default function BenefitsSection({ content, ctaLink }: BenefitsSectionProps) {
+export default function BenefitsSection({ content }: BenefitsSectionProps) {
   const appStoreLink = "https://apps.apple.com/de/app/radauapp/id6745492017?l=en-GB";
   return (
     <section className="py-16 md:py-24 px-4 md:px-8 lg:px-16 bg-muted/50">
@@ -60,7 +60,7 @@ export default function BenefitsSection({ content, ctaLink }: BenefitsSectionPro
         </div>
         <div className="mt-12 text-center">
             <Link href={appStoreLink} className="text-primary hover:underline text-lg font-semibold">
-                {ctaLink}
+                {content.ctaLink}
             </Link>
         </div>
       </div>

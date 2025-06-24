@@ -73,6 +73,15 @@ export default function ImpressumPage() {
   const { shouldShowBanner, giveConsent } = useCookieConsent();
 
   useEffect(() => {
+    const userLang = navigator.language || (navigator as any).userLanguage;
+    if (userLang.startsWith('de')) {
+      setLanguage('de');
+    } else {
+      setLanguage('en');
+    }
+  }, []);
+
+  useEffect(() => {
     document.title = `${content.title} | RadauApp`;
   }, [content.title]);
 
