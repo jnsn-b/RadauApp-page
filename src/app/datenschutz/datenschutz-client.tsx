@@ -28,7 +28,6 @@ const translations = {
       imprint: "Impressum",
       privacy: "Datenschutz",
       copy: "Alle Rechte vorbehalten.",
-      trademarkNotice: "Toniebox ist eine eingetragene Marke der Tonies GmbH."
     },
     cookieBanner: {
       message: "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit der weiteren Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.",
@@ -54,7 +53,6 @@ const translations = {
       imprint: "Imprint",
       privacy: "Privacy Policy",
       copy: "All rights reserved.",
-      trademarkNotice: "Toniebox is a registered trademark of Tonies GmbH."
     },
     cookieBanner: {
       message: "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
@@ -80,7 +78,6 @@ const translations = {
       imprint: "Mentions légales",
       privacy: "Confidentialité",
       copy: "Tous droits réservés.",
-      trademarkNotice: "Toniebox est une marque déposée de Tonies GmbH."
     },
     cookieBanner: {
       message: "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
@@ -106,7 +103,6 @@ const translations = {
       imprint: "Aviso legal",
       privacy: "Privacidad",
       copy: "Todos los derechos reservados.",
-      trademarkNotice: "Toniebox es una marca registrada de Tonies GmbH."
     },
     cookieBanner: {
       message: "Utilizamos cookies para mejorar su experiencia. Al continuar visitando este sitio, acepta nuestro uso de cookies.",

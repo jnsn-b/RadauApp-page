@@ -23,6 +23,7 @@ const translations = {
         title: "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
         person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen"
     },
+    trademarkNotice: "Toniebox ist eine eingetragene Marke der Tonies GmbH.",
     footer: {
       tagline: "Die nachhaltige Kinder-Jukebox.",
       contact: "Kontakt",
@@ -30,7 +31,6 @@ const translations = {
       imprint: "Impressum",
       privacy: "Datenschutz",
       copy: "Alle Rechte vorbehalten.",
-      trademarkNotice: "Toniebox ist eine eingetragene Marke der Tonies GmbH."
     },
     cookieBanner: {
       message: "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Mit der weiteren Nutzung dieser Website stimmen Sie der Verwendung von Cookies zu.",
@@ -51,6 +51,7 @@ const translations = {
         title: "Responsible for the content according to § 55 para. 2 RStV",
         person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Germany"
     },
+    trademarkNotice: "Toniebox is a registered trademark of Tonies GmbH.",
     footer: {
       tagline: "The sustainable kids' jukebox.",
       contact: "Contact",
@@ -58,7 +59,6 @@ const translations = {
       imprint: "Imprint",
       privacy: "Privacy Policy",
       copy: "All rights reserved.",
-      trademarkNotice: "Toniebox is a registered trademark of Tonies GmbH."
     },
     cookieBanner: {
       message: "We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.",
@@ -79,6 +79,7 @@ const translations = {
         title: "Responsable du contenu conformément à l'article 55, par. 2 du traité d'État sur la radiodiffusion (RStV)",
         person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Allemagne"
     },
+    trademarkNotice: "Toniebox est une marque déposée de Tonies GmbH.",
     footer: {
       tagline: "La Jukebox durable pour enfants.",
       contact: "Contact",
@@ -86,7 +87,6 @@ const translations = {
       imprint: "Mentions légales",
       privacy: "Confidentialité",
       copy: "Tous droits réservés.",
-      trademarkNotice: "Toniebox est une marque déposée de Tonies GmbH."
     },
     cookieBanner: {
       message: "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
@@ -107,6 +107,7 @@ const translations = {
         title: "Responsable del contenido según § 55 párr. 2 RStV (Tratado interestatal de radiodifusión)",
         person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Alemania"
     },
+    trademarkNotice: "Toniebox es una marca registrada de Tonies GmbH.",
     footer: {
       tagline: "La Jukebox sostenible para niños.",
       contact: "Contacto",
@@ -114,7 +115,6 @@ const translations = {
       imprint: "Aviso legal",
       privacy: "Privacidad",
       copy: "Todos los derechos reservados.",
-      trademarkNotice: "Toniebox es una marca registrada de Tonies GmbH."
     },
     cookieBanner: {
       message: "Utilizamos cookies para mejorar su experiencia. Al continuar visitando este sitio, acepta nuestro uso de cookies.",
@@ -165,6 +165,10 @@ export default function ImpressumClient() {
 
             <h2 className="text-2xl font-semibold font-headline text-foreground">{content.responsibility.title}</h2>
             <p className="whitespace-pre-wrap">{content.responsibility.person}</p>
+          </div>
+
+          <div className="mt-12 pt-8 border-t text-sm text-muted-foreground">
+             <p className="text-xs">{content.trademarkNotice}</p>
           </div>
         </div>
       </main>
