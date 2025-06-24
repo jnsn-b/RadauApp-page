@@ -8,6 +8,7 @@ interface FooterContent {
     imprint: string;
     privacy: string;
     copy: string;
+    trademarkNotice?: string;
 }
 
 interface FooterProps {
@@ -37,12 +38,17 @@ export default function Footer({ content }: FooterProps) {
             <p className="text-muted-foreground">Reilingen, DE</p>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t text-sm text-muted-foreground flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} RadauApp. {content.copy}</p>
-          <nav className="flex gap-x-6">
-            <Link href="/impressum" className="hover:text-primary transition-colors">{content.imprint}</Link>
-            <Link href="/datenschutz" className="hover:text-primary transition-colors">{content.privacy}</Link>
-          </nav>
+        <div className="mt-12 pt-8 border-t text-sm text-muted-foreground">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-center sm:text-left">&copy; {new Date().getFullYear()} RadauApp. {content.copy}</p>
+            <nav className="flex gap-x-6">
+              <Link href="/impressum" className="hover:text-primary transition-colors">{content.imprint}</Link>
+              <Link href="/datenschutz" className="hover:text-primary transition-colors">{content.privacy}</Link>
+            </nav>
+          </div>
+          {content.trademarkNotice && (
+             <p className="mt-4 text-center sm:text-left text-xs">{content.trademarkNotice}</p>
+          )}
         </div>
       </div>
     </footer>
