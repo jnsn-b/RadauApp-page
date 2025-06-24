@@ -10,7 +10,6 @@ import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 import CookieBanner from "@/components/cookie-banner";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
-import Head from "next/head";
 
 type Language = "de" | "en";
 
@@ -195,12 +194,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground">
-       <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Header language={language} setLanguage={setLanguage} />
       <main className="flex-grow">
         <HeroSection content={content.hero} language={language} />
