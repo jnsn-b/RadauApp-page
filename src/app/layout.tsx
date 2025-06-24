@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: 'RadauApp - Die nachhaltige Kinder-Jukebox',
   },
   description: 'Mach aus deinem alten iPhone eine nachhaltige Musikbox für Kinder. Die RadauApp ist die smarte Alternative zur Toniebox – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.',
-  keywords: ["Kinder Jukebox", "Musikbox Kinder", "Toniebox Alternative", "Hörspielbox", "Kinder-App", "nachhaltig", "altes iPhone", "Apple Music", "Kinder-Hörspiele", "Kindermusik-App", "Kinder-Podcasts"],
+  keywords: ["Kinder Jukebox", "Musikbox Kinder", "Toniebox Alternative", "Hörspielbox", "Kinder-Hörspiele", "Hörbuch App Kinder", "Kinderlieder App", "Kindermusik-App", "Kinder-App", "Kinder-Podcasts", "nachhaltig", "Upcycling iPhone", "altes iPhone", "Apple Music"],
   creator: 'RadauApp',
   authors: [{ name: 'RadauApp', url: siteUrl }],
   icons: {
