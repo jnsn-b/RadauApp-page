@@ -78,7 +78,7 @@ export default function WorkSection({ content }: WorkSectionProps) {
           </ul>
         </div>
         <div className="order-1 md:order-2 flex justify-center">
-            <div ref={imageContainerRef} className="relative w-[500px] h-[500px]">
+            <div ref={imageContainerRef} className="relative w-full max-w-[500px] aspect-square mx-auto">
               <Image
                 src="/kid.webp"
                 alt={content.imageAlt}
