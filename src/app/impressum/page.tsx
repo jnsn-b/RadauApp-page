@@ -8,7 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import CookieBanner from "@/components/cookie-banner";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
 
-type Language = "de" | "en";
+type Language = "de" | "en" | "fr" | "es";
 
 const translations = {
   de: {
@@ -64,6 +64,60 @@ const translations = {
       decline: "Decline",
       privacyPolicy: "Our Privacy Policy."
     }
+  },
+  fr: {
+    title: "Mentions légales",
+    back_to_home: "Retour à l'accueil",
+    heading: "Informations conformément à l'article 5 de la loi allemande sur les télémédias (TMG)",
+    operator: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Allemagne",
+    contact: {
+      title: "Contact",
+    },
+    responsibility: {
+        title: "Responsable du contenu conformément à l'article 55, par. 2 du traité d'État sur la radiodiffusion (RStV)",
+        person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Allemagne"
+    },
+    footer: {
+      tagline: "La Jukebox durable pour enfants.",
+      contact: "Contact",
+      location: "Lieu",
+      imprint: "Mentions légales",
+      privacy: "Confidentialité",
+      copy: "Tous droits réservés."
+    },
+    cookieBanner: {
+      message: "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
+      accept: "Accepter",
+      decline: "Refuser",
+      privacyPolicy: "Notre politique de confidentialité."
+    }
+  },
+  es: {
+    title: "Aviso legal",
+    back_to_home: "Volver al inicio",
+    heading: "Información según § 5 TMG (Ley de Telemedios de Alemania)",
+    operator: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Alemania",
+    contact: {
+      title: "Contacto",
+    },
+    responsibility: {
+        title: "Responsable del contenido según § 55 párr. 2 RStV (Tratado interestatal de radiodifusión)",
+        person: "Jens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Alemania"
+    },
+    footer: {
+      tagline: "La Jukebox sostenible para niños.",
+      contact: "Contacto",
+      location: "Ubicación",
+      imprint: "Aviso legal",
+      privacy: "Privacidad",
+      copy: "Todos los derechos reservados."
+    },
+    cookieBanner: {
+      message: "Utilizamos cookies para mejorar su experiencia. Al continuar visitando este sitio, acepta nuestro uso de cookies.",
+      accept: "Aceptar",
+      decline: "Rechazar",
+      privacyPolicy: "Nuestra política de privacidad."
+    }
   }
 };
 
@@ -76,6 +130,10 @@ export default function ImpressumPage() {
     const userLang = navigator.language || (navigator as any).userLanguage;
     if (userLang.startsWith('de')) {
       setLanguage('de');
+    } else if (userLang.startsWith('fr')) {
+      setLanguage('fr');
+    } else if (userLang.startsWith('es')) {
+      setLanguage('es');
     } else {
       setLanguage('en');
     }

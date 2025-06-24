@@ -8,7 +8,7 @@ import { ArrowLeft } from "lucide-react";
 import CookieBanner from "@/components/cookie-banner";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
 
-type Language = "de" | "en";
+type Language = "de" | "en" | "fr" | "es";
 
 const translations = {
   de: {
@@ -60,6 +60,56 @@ const translations = {
       decline: "Decline",
       privacyPolicy: "Our Privacy Policy."
     }
+  },
+  fr: {
+    title: "Politique de confidentialité",
+    back_to_home: "Retour à l'accueil",
+    sections: [
+        { title: "1. La protection des données en un coup d'œil", content: "Les remarques suivantes donnent un aperçu simple de ce qu'il advient de vos données personnelles lorsque vous visitez notre site web. Les données personnelles sont toutes les données avec lesquelles vous pouvez être personnellement identifié. Vous trouverez des informations détaillées sur le thème de la protection des données dans notre politique de confidentialité listée sous ce texte." },
+        { title: "2. Organisme responsable", content: "L'organisme responsable du traitement des données sur ce site web est :\n\nJens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Allemagne\n\nE-mail : radau.app@team-becker.net\n\nL'organisme responsable est la personne physique ou morale qui, seule ou conjointement avec d'autres, détermine les finalités et les moyens du traitement des données à caractère personnel (par exemple, noms, adresses e-mail, etc.)." },
+        { title: "3. Vos droits en tant que personne concernée", content: "Dans le cadre des dispositions légales en vigueur, vous avez à tout moment le droit d'obtenir gratuitement des informations sur vos données personnelles stockées, leur origine et leurs destinataires, ainsi que sur la finalité du traitement des données et, le cas échéant, un droit de rectification, de blocage ou de suppression de ces données. Pour cela, ainsi que pour d'autres questions sur le sujet des données personnelles, vous pouvez nous contacter à tout moment." },
+        { title: "4. Collecte de données sur notre site web", content: "Cookies : Nos pages Internet utilisent des « cookies ». Les cookies sont de petits fichiers texte qui ne causent aucun dommage à votre appareil. Ils sont stockés soit temporairement pour la durée d'une session (cookies de session), soit de manière permanente (cookies permanents) sur votre appareil. Les cookies de session sont automatiquement supprimés à la fin de votre visite. Les cookies permanents restent stockés sur votre appareil jusqu'à ce que vous les supprimiez vous-même ou qu'une suppression automatique soit effectuée par votre navigateur web.\n\nFichiers journaux du serveur : Le fournisseur des pages collecte et stocke automatiquement des informations dans des fichiers journaux de serveur, que votre navigateur nous transmet automatiquement. Il s'agit de : type et version du navigateur, système d'exploitation utilisé, URL de référence, nom d'hôte de l'ordinateur accédant, heure de la requête du serveur, adresse IP. Ces données ne sont pas fusionnées avec d'autres sources de données. La collecte de ces données est basée sur l'art. 6, par. 1, let. f du RGPD." },
+        { title: "5. Prise de contact", content: "Si vous nous contactez par e-mail, votre demande, y compris toutes les données personnelles qui en découlent (nom, demande), sera stockée et traitée par nos soins aux fins du traitement de votre requête. Nous ne transmettons pas ces données sans votre consentement. Le traitement de ces données est basé sur l'art. 6, par. 1, let. b du RGPD, dans la mesure où votre demande est liée à l'exécution d'un contrat ou est nécessaire à la mise en œuvre de mesures précontractuelles." }
+    ],
+    footer: {
+      tagline: "La Jukebox durable pour enfants.",
+      contact: "Contact",
+      location: "Lieu",
+      imprint: "Mentions légales",
+      privacy: "Confidentialité",
+      copy: "Tous droits réservés."
+    },
+    cookieBanner: {
+      message: "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
+      accept: "Accepter",
+      decline: "Refuser",
+      privacyPolicy: "Notre politique de confidentialité."
+    }
+  },
+  es: {
+    title: "Política de privacidad",
+    back_to_home: "Volver al inicio",
+    sections: [
+        { title: "1. Protección de datos de un vistazo", content: "Las siguientes notas ofrecen una visión general sencilla de lo que sucede con sus datos personales cuando visita nuestro sitio web. Los datos personales son cualquier dato con el que se le pueda identificar personalmente. Encontrará información detallada sobre el tema de la protección de datos en nuestra política de privacidad que figura debajo de este texto." },
+        { title: "2. Entidad responsable", content: "La entidad responsable del tratamiento de datos en este sitio web es:\n\nJens Becker\nAlbert-Schweitzer-Str. 3\n68799 Reilingen, Alemania\n\nCorreo electrónico: radau.app@team-becker.net\n\nEl responsable es la persona física o jurídica que, sola o junto con otras, determina los fines y medios del tratamiento de datos personales (por ejemplo, nombres, direcciones de correo electrónico, etc.)." },
+        { title: "3. Sus derechos como interesado", content: "En el marco de las disposiciones legales aplicables, usted tiene derecho en todo momento a obtener información gratuita sobre sus datos personales almacenados, su origen y destinatarios, y la finalidad del tratamiento de los datos y, en su caso, derecho a la rectificación, bloqueo o supresión de estos datos. Para ello, así como para otras cuestiones sobre el tema de los datos personales, puede ponerse en contacto con nosotros en cualquier momento." },
+        { title: "4. Recopilación de datos en nuestro sitio web", content: "Cookies: Nuestras páginas de Internet utilizan las llamadas 'cookies'. Las cookies son pequeños archivos de texto y no causan ningún daño en su dispositivo. Se almacenan temporalmente durante la duración de una sesión (cookies de sesión) o permanentemente (cookies permanentes) en su dispositivo. Las cookies de sesión se eliminan automáticamente al final de su visita. Las cookies permanentes permanecen almacenadas en su dispositivo hasta que usted mismo las elimine o se lleve a cabo una eliminación automática por parte de su navegador web.\n\nArchivos de registro del servidor: El proveedor de las páginas recopila y almacena automáticamente información en los llamados archivos de registro del servidor, que su navegador nos transmite automáticamente. Estos son: tipo y versión del navegador, sistema operativo utilizado, URL de referencia, nombre de host del ordenador que accede, hora de la solicitud del servidor, dirección IP. No se realiza una fusión de estos datos con otras fuentes de datos. La recopilación de estos datos se basa en el Art. 6, apdo. 1, letra f del RGPD." },
+        { title: "5. Contacto", content: "Si se pone en contacto con nosotros por correo electrónico, su consulta, incluidos todos los datos personales resultantes (nombre, consulta), será almacenada y procesada por nosotros con el fin de tramitar su solicitud. No transmitimos estos datos sin su consentimiento. El tratamiento de estos datos se basa en el Art. 6, apdo. 1, letra b del RGPD, siempre que su consulta esté relacionada con el cumplimiento de un contrato o sea necesaria para la ejecución de medidas precontractuales." }
+    ],
+    footer: {
+      tagline: "La Jukebox sostenible para niños.",
+      contact: "Contacto",
+      location: "Ubicación",
+      imprint: "Aviso legal",
+      privacy: "Privacidad",
+      copy: "Todos los derechos reservados."
+    },
+    cookieBanner: {
+      message: "Utilizamos cookies para mejorar su experiencia. Al continuar visitando este sitio, acepta nuestro uso de cookies.",
+      accept: "Aceptar",
+      decline: "Rechazar",
+      privacyPolicy: "Nuestra política de privacidad."
+    }
   }
 };
 
@@ -72,6 +122,10 @@ export default function DatenschutzPage() {
     const userLang = navigator.language || (navigator as any).userLanguage;
     if (userLang.startsWith('de')) {
       setLanguage('de');
+    } else if (userLang.startsWith('fr')) {
+      setLanguage('fr');
+    } else if (userLang.startsWith('es')) {
+      setLanguage('es');
     } else {
       setLanguage('en');
     }

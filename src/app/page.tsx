@@ -11,7 +11,7 @@ import Footer from "@/components/footer";
 import CookieBanner from "@/components/cookie-banner";
 import { useCookieConsent } from "@/hooks/use-cookie-consent";
 
-type Language = "de" | "en";
+type Language = "de" | "en" | "fr" | "es";
 
 const translations = {
   de: {
@@ -19,6 +19,7 @@ const translations = {
       subtitle: "Die nachhaltige Kinder-Jukebox",
       description: "Mach aus deinem alten iPhone ein smartes Musikgerät für Kinder – ganz ohne Lesen, aber mit voller Kontrolle im Elternbereich.",
       imageAlt: "RadauApp auf einem iPhone",
+      ctaLink: "Jetzt im App Store entdecken."
     },
     services: {
       title: "Was ist die RadauApp?",
@@ -85,6 +86,7 @@ const translations = {
       subtitle: "The Sustainable Kids' Jukebox",
       description: "Turn your old iPhone into a smart music device for kids - without any reading required, but with full control in the parent area.",
       imageAlt: "RadauApp on an iPhone",
+      ctaLink: "Discover it on the App Store now."
     },
     services: {
       title: "What is RadauApp?",
@@ -145,6 +147,140 @@ const translations = {
       decline: "Decline",
       privacyPolicy: "Our Privacy Policy."
     }
+  },
+  fr: {
+    hero: {
+      subtitle: "La Jukebox durable pour enfants",
+      description: "Transformez votre vieil iPhone en un appareil musical intelligent pour les enfants – sans lecture requise, mais avec un contrôle total dans l'espace parents.",
+      imageAlt: "RadauApp sur un iPhone",
+      ctaLink: "Découvrez-la maintenant sur l'App Store."
+    },
+    services: {
+      title: "Qu'est-ce que RadauApp ?",
+      description1: "L'alternative durable à la TonieBox. Vous avez un vieil iPhone 6s ou plus récent à la maison ? Parfait ! Avec RadauApp, transformez-le en une boîte à musique ultra-simple pour vos petits.",
+      features: [
+        { title: "Apple Music & vos MP3", description: "Accédez à l'immense bibliothèque d'Apple Music ou lisez vos propres fichiers MP3." },
+        { title: "Podcasts préférés", description: "Intégrez les livres audio et podcasts favoris de vos enfants directement dans l'application." },
+        { title: "Webradio adaptée aux enfants", description: "Ajoutez des stations de webradio sûres et divertissantes pour les enfants." }
+      ],
+      description2: "L'utilisation est volontairement simple – sans nécessiter de savoir lire. De grandes tuiles, des icônes intuitives et aucune distraction. Touchez simplement – la musique joue !",
+      ctaLink: "Découvrez toutes les fonctionnalités dans l'app – maintenant sur l'App Store."
+    },
+    work: {
+      title: "Mode Parent inclus",
+      description: "Dans l'espace parent protégé, vous pouvez tout gérer en toute sécurité derrière un simple code d'accès :",
+      features: [
+        { text: "Gérer les médias (playlists, podcasts, stations de radio)" },
+        { text: "Modifier les images de couverture" },
+        { text: "Ajouter ou supprimer du contenu" }
+      ],
+      imageAlt: "Mode parent dans la RadauApp"
+    },
+    benefits: {
+        title: "Plus que de la musique",
+        description: "RadauApp est le compagnon idéal pour le quotidien familial – conçu pour relever les petits et grands défis tout en étant durable et sûr.",
+        benefits: [
+            { title: "Trajets en voiture détendus", description: "Votre enfant choisit lui-même son divertissement. Moins de distraction pour vous et pas de pleurnicheries sur la banquette arrière.", icon: "Car" },
+            { title: "Temps d'écran de qualité", description: "Pas de vidéos captivantes, juste un simple affichage. Cela ménage les yeux et stimule l'imagination par la seule écoute.", icon: "Eye" },
+            { title: "Toujours et partout avec vous", description: "Un vieil iPhone et des écouteurs suffisent. Compacte et légère, RadauApp se glisse dans n'importe quel sac à dos – sans appareils supplémentaires encombrants.", icon: "Headphones" },
+            { title: "Économiser de l'argent", description: "Épargnez-vous le matériel spécialisé coûteux comme la TonieBox & Co. et utilisez ce que vous avez déjà.", icon: "PiggyBank" },
+            { title: "Durable", description: "Donnez une seconde vie à votre vieil iPhone au lieu de le laisser prendre la poussière dans un tiroir ou de le jeter.", icon: "Recycle" },
+            { title: "Sûr & Privé", description: "Contrôle total sur le contenu et aucune dépendance au cloud. Vos données restent les vôtres.", icon: "ShieldCheck" }
+        ],
+        ctaLink: "Convaincu ? Obtenez l'application sur l'App Store."
+    },
+    cta: {
+      title: "Questions fréquentes",
+      faqs: [
+        { question: "Comment verrouiller l'iPhone pour qu'une seule application soit utilisable ?", answer: <>Avec la fonction iOS « Accès guidé » (sous Réglages > Accessibilité). Elle permet de restreindre l'appareil à RadauApp. Apple propose un <a href="https://support.apple.com/fr-fr/111795" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">guide officiel</a> à ce sujet.</> },
+        { question: "L'application fonctionne-t-elle aussi sur l'iPad ?", answer: "Une version pour iPad est prévue et sera bientôt disponible, afin que les appareils mis au rebut puissent également avoir une seconde vie !" },
+        { question: "Quels appareils sont pris en charge ?", answer: "RadauApp fonctionne sur tous les iPhone à partir du modèle 6s avec iOS 15 ou plus récent. Vous pouvez ainsi donner une nouvelle vie utile même aux appareils plus anciens." },
+        { question: "Comment gérer les playlists ?", answer: "Les playlists musicales sont gérées dans iTunes ou l'application Apple Music. Vous pouvez y abonner et gérer des chansons dans des playlists. RadauApp récupère ces playlists et les présente de manière adaptée aux enfants. En mode parent, vous pouvez modifier l'apparence des playlists." },
+        { question: "Comment puis-je utiliser ma propre musique ?", answer: "Vous pouvez synchroniser vos propres fichiers MP3 sur votre téléphone via iTunes sur votre Mac ou ordinateur. Une fois les chansons ou livres audio disponibles, ils peuvent être contrôlés via RadauApp." },
+        { question: "Est-ce que Spotify fonctionne ?", answer: "Malheureusement non pour le moment. RadauApp prend en charge Apple Music et les fichiers locaux, mais pas Spotify, car Spotify ne peut pas être contrôlé par une application externe." }
+      ]
+    },
+    footer: {
+      tagline: "La Jukebox durable pour enfants.",
+      contact: "Contact",
+      location: "Lieu",
+      imprint: "Mentions légales",
+      privacy: "Confidentialité",
+      copy: "Tous droits réservés."
+    },
+    cookieBanner: {
+      message: "Nous utilisons des cookies pour améliorer votre expérience. En continuant à visiter ce site, vous acceptez notre utilisation des cookies.",
+      accept: "Accepter",
+      decline: "Refuser",
+      privacyPolicy: "Notre politique de confidentialité."
+    }
+  },
+  es: {
+    hero: {
+      subtitle: "La Jukebox sostenible para niños",
+      description: "Convierte tu viejo iPhone en un dispositivo de música inteligente para niños, sin necesidad de saber leer, pero con control total en el área para padres.",
+      imageAlt: "RadauApp en un iPhone",
+      ctaLink: "Descúbrela ahora en la App Store."
+    },
+    services: {
+      title: "¿Qué es RadauApp?",
+      description1: "La alternativa sostenible al TonieBox. ¿Tienes un iPhone 6s o más nuevo en casa? ¡Perfecto! Con RadauApp, lo conviertes en una caja de música súper fácil para tus pequeños.",
+      features: [
+        { title: "Apple Music y tus MP3", description: "Accede a la enorme biblioteca de Apple Music o reproduce tus propios archivos MP3." },
+        { title: "Podcasts favoritos", description: "Integra los audiolibros y podcasts favoritos de tus hijos directamente en la aplicación." },
+        { title: "Radio web segura para niños", description: "Añade estaciones de radio web seguras y entretenidas para niños." }
+      ],
+      description2: "El manejo es deliberadamente simple, sin necesidad de saber leer. Grandes mosaicos, iconos intuitivos y sin distracciones. ¡Solo toca y la música suena!",
+      ctaLink: "Descubre todas las funciones en la app, ¡ya en la App Store!"
+    },
+    work: {
+      title: "Modo para padres incluido",
+      description: "En el área protegida para padres, puedes gestionarlo todo de forma segura detrás de un simple código de acceso:",
+      features: [
+        { text: "Gestionar medios (listas de reproducción, podcasts, emisoras de radio)" },
+        { text: "Cambiar imágenes de portada" },
+        { text: "Añadir o eliminar contenido" }
+      ],
+      imageAlt: "Modo para padres en la RadauApp"
+    },
+    benefits: {
+        title: "Más que solo música",
+        description: "RadauApp es el compañero perfecto para el día a día familiar, diseñado para superar los pequeños y grandes desafíos de forma sostenible y segura.",
+        benefits: [
+            { title: "Viajes en coche relajados", description: "Tu hijo elige su propio entretenimiento. Esto significa menos distracciones para ti y menos quejas desde el asiento trasero.", icon: "Car" },
+            { title: "Tiempo de pantalla valioso", description: "Sin videos adictivos, solo una pantalla simple. Esto cuida los ojos y fomenta la imaginación a través de la escucha pura.", icon: "Eye" },
+            { title: "Siempre y en todas partes", description: "Un viejo iPhone y unos auriculares es todo lo que necesitas. Compacta y ligera, RadauApp cabe en cualquier mochila, sin dispositivos adicionales voluminosos.", icon: "Headphones" },
+            { title: "Ahorra dinero", description: "Ahórrate el costoso hardware especializado como TonieBox y compañía, y usa lo que ya tienes.", icon: "PiggyBank" },
+            { title: "Sostenible", description: "Dale una segunda vida a tu viejo iPhone en lugar de dejar que acumule polvo en un cajón o tirarlo.", icon: "Recycle" },
+            { title: "Seguro y Privado", description: "Control total sobre el contenido y sin dependencia de la nube. Tus datos se quedan contigo.", icon: "ShieldCheck" }
+        ],
+        ctaLink: "¿Convencido? Consigue la app en la App Store."
+    },
+    cta: {
+      title: "Preguntas frecuentes",
+      faqs: [
+        { question: "¿Cómo bloqueo el iPhone para que solo se pueda usar una aplicación?", answer: <>Con la función de iOS 'Acceso Guiado' (en Ajustes > Accesibilidad). Esto permite restringir el dispositivo a la RadauApp. Apple ofrece una <a href="https://support.apple.com/es-es/111795" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">guía oficial</a> para ello.</> },
+        { question: "¿La aplicación también funciona en el iPad?", answer: "¡Se está planeando una versión para iPad y estará disponible pronto, para que los dispositivos en desuso también puedan tener una segunda vida!" },
+        { question: "¿Qué dispositivos son compatibles?", answer: "RadauApp funciona en cualquier iPhone a partir del modelo 6s con iOS 15 o posterior. Así puedes dar una nueva vida útil a dispositivos más antiguos." },
+        { question: "¿Cómo gestiono las listas de reproducción?", answer: "Las listas de reproducción de música se gestionan en iTunes o en la aplicación Apple Music. Allí puedes suscribirte y gestionar canciones en listas de reproducción. RadauApp recupera estas listas y las presenta de forma adaptada para niños. En el modo para padres puedes editar la apariencia de las listas." },
+        { question: "¿Cómo puedo usar mi propia música?", answer: "Puedes sincronizar tus propios archivos MP3 con tu teléfono a través de iTunes en tu Mac o PC. Una vez que las canciones o audiolibros estén disponibles, se pueden controlar a través de RadauApp." },
+        { question: "¿Funciona con Spotify?", answer: "Lamentablemente, por el momento no. RadauApp es compatible con Apple Music y archivos locales, pero no con Spotify, ya que Spotify no se puede controlar desde una aplicación externa." }
+      ]
+    },
+    footer: {
+      tagline: "La Jukebox sostenible para niños.",
+      contact: "Contacto",
+      location: "Ubicación",
+      imprint: "Aviso legal",
+      privacy: "Privacidad",
+      copy: "Todos los derechos reservados."
+    },
+    cookieBanner: {
+      message: "Utilizamos cookies para mejorar su experiencia. Al continuar visitando este sitio, acepta nuestro uso de cookies.",
+      accept: "Aceptar",
+      decline: "Rechazar",
+      privacyPolicy: "Nuestra política de privacidad."
+    }
   }
 };
 
@@ -177,20 +313,54 @@ export default function Home() {
     const userLang = navigator.language || (navigator as any).userLanguage;
     if (userLang.startsWith('de')) {
       setLanguage('de');
+    } else if (userLang.startsWith('fr')) {
+      setLanguage('fr');
+    } else if (userLang.startsWith('es')) {
+      setLanguage('es');
     } else {
       setLanguage('en');
     }
   }, []);
 
-  const faqLink = language === 'de' ? "https://support.apple.com/de-de/111795" : "https://support.apple.com/en-us/111795";
+  const getFaqLink = () => {
+    switch (language) {
+      case 'de': return "https://support.apple.com/de-de/111795";
+      case 'fr': return "https://support.apple.com/fr-fr/111795";
+      case 'es': return "https://support.apple.com/es-es/111795";
+      default: return "https://support.apple.com/en-us/111795";
+    }
+  }
+  
+  const getFaqText = () => {
+    switch(language) {
+      case 'de': return {
+        prefix: 'Mit der iOS-Funktion „Geführter Zugriff“ (unter Einstellungen > Bedienungshilfen). Damit kann das Gerät auf die RadauApp beschränkt werden. Apple bietet hierzu eine ',
+        linkText: 'offizielle Anleitung'
+      };
+      case 'fr': return {
+        prefix: "Avec la fonction iOS « Accès guidé » (sous Réglages > Accessibilité). Elle permet de restreindre l'appareil à RadauApp. Apple propose un ",
+        linkText: 'guide officiel'
+      };
+      case 'es': return {
+        prefix: "Con la función de iOS 'Acceso Guiado' (en Ajustes > Accesibilidad). Esto permite restringir el dispositivo a la RadauApp. Apple ofrece una ",
+        linkText: 'guía oficial'
+      };
+      default: return {
+        prefix: "With the iOS feature 'Guided Access' (under Settings > Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an ",
+        linkText: 'official guide'
+      };
+    }
+  }
+
   const updatedFaqs = content.cta.faqs.map(faq => {
-      if (faq.question.includes("sperre ich das iPhone") || faq.question.includes("lock the iPhone")) {
+      if (faq.question.includes("sperre ich das iPhone") || faq.question.includes("lock the iPhone") || faq.question.includes("verrouiller l'iPhone") || faq.question.includes("bloqueo el iPhone")) {
+          const faqContent = getFaqText();
           return {
               ...faq,
               answer: <>
-                  {language === 'de' ? 'Mit der iOS-Funktion „Geführter Zugriff“ (unter Einstellungen > Bedienungshilfen). Damit kann das Gerät auf die RadauApp beschränkt werden. Apple bietet hierzu eine ' : 'With the iOS feature \'Guided Access\' (under Settings > Accessibility). This allows you to restrict the device to the RadauApp. Apple provides an '}
-                  <a href={faqLink} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-                      {language === 'de' ? 'offizielle Anleitung' : 'official guide'}
+                  {faqContent.prefix}
+                  <a href={getFaqLink()} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                      {faqContent.linkText}
                   </a>
                   .
               </>

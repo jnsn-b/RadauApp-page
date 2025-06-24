@@ -29,6 +29,22 @@ const UKFlag = () => (
     </svg>
 );
 
+const FrenchFlag = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" className="w-5 h-auto rounded-sm">
+    <rect width="1" height="2" fill="#002395"/>
+    <rect width="1" height="2" x="1" fill="#FFFFFF"/>
+    <rect width="1" height="2" x="2" fill="#ED2939"/>
+  </svg>
+);
+
+const SpanishFlag = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" className="w-5 h-auto rounded-sm">
+    <rect width="3" height="2" fill="#C60B1E"/>
+    <rect width="3" height="1" y="0.5" fill="#FFC400"/>
+  </svg>
+);
+
+
 const AppStoreButton = () => (
   <a href="https://apps.apple.com/de/app/radauapp/id6745492017?l=en-GB" className="inline-block hover:opacity-90 transition-opacity" title="Download on the App Store">
     <Image
@@ -50,7 +66,7 @@ const AppStoreButton = () => (
   </a>
 );
 
-type Language = "de" | "en";
+type Language = "de" | "en" | "fr" | "es";
 
 interface HeaderProps {
   language: Language;
@@ -58,6 +74,12 @@ interface HeaderProps {
 }
 
 export default function Header({ language, setLanguage }: HeaderProps) {
+  const languageConfig = {
+    de: { flag: <GermanFlag />, label: 'Deutsch' },
+    en: { flag: <UKFlag />, label: 'English' },
+    fr: { flag: <FrenchFlag />, label: 'Français' },
+    es: { flag: <SpanishFlag />, label: 'Español' },
+  }
 
   return (
     <header className="py-4 px-4 sm:px-6 md:px-8 lg:px-16 flex justify-between items-center bg-background/80 backdrop-blur-sm sticky top-0 z-50 border-b border-border/50">
@@ -72,20 +94,18 @@ export default function Header({ language, setLanguage }: HeaderProps) {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="flex items-center gap-2 p-2.5 sm:p-2 sm:px-3">
-              {language === 'de' ? <GermanFlag /> : <UKFlag />}
+              {languageConfig[language].flag}
               <span className="uppercase hidden sm:inline">{language}</span>
               <ChevronDown className="h-4 w-4 hidden sm:block" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem onSelect={() => setLanguage('de')} className="gap-2 cursor-pointer">
-              <GermanFlag />
-              <span>Deutsch</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem onSelect={() => setLanguage('en')} className="gap-2 cursor-pointer">
-              <UKFlag />
-              <span>English</span>
-            </DropdownMenuItem>
+            {Object.entries(languageConfig).map(([lang, config]) => (
+               <DropdownMenuItem key={lang} onSelect={() => setLanguage(lang as Language)} className="gap-2 cursor-pointer">
+                {config.flag}
+                <span>{config.label}</span>
+              </DropdownMenuItem>
+            ))}
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
