@@ -10,5 +10,5 @@ domains:
     type: redirect
 redirects:
   - type: 301
-    regex: "https://www.radau.app(/.*)?"
+    regex: "https://www\\.radau\\.app(/.*)?"
     destination: "https://radau.app\\1"
