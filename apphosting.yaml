@@ -10,5 +10,12 @@ domains:
     type: redirect
 redirects:
   - type: 301
-    regex: "https://www\\.radau\\.app(/.*)?"
-    destination: "https://radau.app\\1"
+    # This regex matches any path on the www domain. The backtick in the
+    # destination will append it to the new URL.
+    regex: "^/.*"
+    # This header rule scopes the redirect to ONLY apply to www.radau.app.
+    headers:
+      - header: Host
+        regex: "^www\\.radau\\.app$"
+    # The destination uses the backtick to append the original request path.
+    destination: "https://radau.app`"
