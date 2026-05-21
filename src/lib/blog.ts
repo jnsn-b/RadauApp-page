@@ -1644,28 +1644,6 @@ When starting Guided Access:
     `
   },
 
-];
-
-export function getPostsByLang(lang: Language): BlogPost[] {
-  return blogPosts.filter(post => post.lang === lang);
-}
-
-export function getPostBySlugAndLang(slug: string, lang: Language): BlogPost | undefined {
-  return blogPosts.find(post => post.slug === slug && post.lang === lang);
-}
-
-export function getAllSlugs(): string[] {
-  return [...new Set(blogPosts.map(post => post.slug))];
-}
-
-export const blogTranslations = {
-  de: { title: "Blog", subtitle: "Tipps, Vergleiche und Wissenswertes rund um die RadauApp.", readMore: "Weiterlesen", readingTime: "Min. Lesezeit", backToBlog: "← Zurück zum Blog", by: "Von" },
-  en: { title: "Blog", subtitle: "Tips, comparisons and insights about RadauApp.", readMore: "Read more", readingTime: "min read", backToBlog: "← Back to blog", by: "By" },
-  fr: { title: "Blog", subtitle: "Conseils, comparaisons et informations sur RadauApp.", readMore: "Lire la suite", readingTime: "min de lecture", backToBlog: "← Retour au blog", by: "Par" },
-  es: { title: "Blog", subtitle: "Consejos, comparaciones e información sobre RadauApp.", readMore: "Leer más", readingTime: "min de lectura", backToBlog: "← Volver al blog", by: "Por" },
-};
-
-  // ─── UNSERE GESCHICHTE DE ────────────────────────────────────────────────
   {
     slug: "unsere-geschichte",
     lang: "de",
@@ -2780,3 +2758,24 @@ La app se instala una vez con el Apple ID del padre. Después funciona completam
 **[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
+
+];
+
+export function getPostsByLang(lang: Language): BlogPost[] {
+  return blogPosts.filter(post => post.lang === lang);
+}
+
+export function getPostBySlugAndLang(slug: string, lang: Language): BlogPost | undefined {
+  return blogPosts.find(post => post.slug === slug && post.lang === lang);
+}
+
+export function getAllSlugs(): string[] {
+  return [...new Set(blogPosts.map(post => post.slug))];
+}
+
+export const blogTranslations = {
+  de: { title: "Blog", subtitle: "Tipps, Vergleiche und Wissenswertes rund um die RadauApp.", readMore: "Weiterlesen", readingTime: "Min. Lesezeit", backToBlog: "← Zurück zum Blog", by: "Von" },
+  en: { title: "Blog", subtitle: "Tips, comparisons and insights about RadauApp.", readMore: "Read more", readingTime: "min read", backToBlog: "← Back to blog", by: "By" },
+  fr: { title: "Blog", subtitle: "Conseils, comparaisons et informations sur RadauApp.", readMore: "Lire la suite", readingTime: "min de lecture", backToBlog: "← Retour au blog", by: "Par" },
+  es: { title: "Blog", subtitle: "Consejos, comparaciones e información sobre RadauApp.", readMore: "Leer más", readingTime: "min de lectura", backToBlog: "← Volver al blog", by: "Por" },
+};
