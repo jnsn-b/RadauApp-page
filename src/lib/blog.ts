@@ -10,9 +10,12 @@ export interface BlogPost {
   tags: string[];
   content: string;
   readingTime: number;
+  faqSchema?: { question: string; answer: string }[];
 }
 
 export const blogPosts: BlogPost[] = [
+
+  // ─── TONIEBOX VERGLEICH ───────────────────────────────────────────────────
   {
     slug: "toniebox-alternative",
     lang: "de",
@@ -22,8 +25,24 @@ export const blogPosts: BlogPost[] = [
     author: "RadauApp Team",
     tags: ["Toniebox Alternative", "Kinder Musikbox", "nachhaltig", "Vergleich"],
     readingTime: 6,
+    faqSchema: [
+      { question: "Was ist eine gute Alternative zur Toniebox?", answer: "Die RadauApp auf einem alten iPhone ist eine günstige, nachhaltige Toniebox-Alternative. Sie funktioniert ab iPhone 6s, unterstützt Apple Music, eigene MP3s, Podcasts und Webradio – kostenlos im App Store." },
+      { question: "Was kostet die Toniebox im Vergleich zur RadauApp?", answer: "Die Toniebox kostet ca. 100€, jede Tonie-Figur 15–20€. Die RadauApp ist gratis. Ein gebrauchtes iPhone 6s kostet ca. 20–40€. Wer bereits ein altes iPhone hat, zahlt gar nichts." },
+      { question: "Kann die RadauApp eigene Hörspiele abspielen?", answer: "Ja. In der RadauApp können eigene MP3-Dateien, Apple Music Playlists, Podcasts und Webradio-Sender eingebunden werden." },
+    ],
     content: `
-Die **Toniebox** ist aus vielen Kinderzimmern nicht mehr wegzudenken. Doch der Einstiegspreis von über 100€ für die Box – plus 15–20€ pro Tonie-Figur – macht das schnell teuer. Wir stellen eine smarte Alternative vor: die **RadauApp** auf einem alten iPhone.
+## Was ist eine gute Alternative zur Toniebox?
+
+Die **RadauApp** ist eine kostenlose iOS-App, die ein altes iPhone in eine kindersichere Musikbox verwandelt. Sie ist die günstigste und nachhaltigste Alternative zur Toniebox – ohne Plastikfiguren und ohne laufende Extrakosten.
+
+**Kurz zusammengefasst:**
+- Kostenlos im App Store
+- Läuft auf iPhone 6s oder neuer
+- Unterstützt Apple Music, MP3s, Podcasts und Webradio
+- Kindgerechte Bedienung ohne Lesekenntnisse
+- Elternbereich mit Zugriffsschutz
+
+---
 
 ## Was kostet die Toniebox wirklich?
 
@@ -34,40 +53,52 @@ Die **Toniebox** ist aus vielen Kinderzimmern nicht mehr wegzudenken. Doch der E
 | 10 Figuren | ~150–200€ |
 | **Gesamt** | **~250–300€** |
 
-Dazu kommt: Tonies können verloren gehen, kaputt gehen oder einfach irgendwann nicht mehr interessieren.
+**Die RadauApp kostet 0€** – vorausgesetzt, ein altes iPhone ist vorhanden. Gebraucht gibt es ein iPhone 6s bereits ab 20–40€.
 
-## Die RadauApp: Was brauchst du?
+---
 
-- Ein altes iPhone (ab iPhone 6s, iOS 16+) – oft noch zuhause oder für ~50€ gebraucht
-- Die RadauApp (kostenlos im App Store)
-- Optional: Apple Music Abo (bereits vorhanden?)
-
-Das war's. Kein Plastikfiguren-Chaos, kein Nachkaufen, kein Verlieren.
-
-## Funktionsvergleich
+## Was kann die RadauApp, was die Toniebox nicht kann?
 
 | Funktion | Toniebox | RadauApp |
 |---|---|---|
 | Kindgerechte Bedienung | ✅ | ✅ |
-| Eigene MP3s | ❌ | ✅ |
-| Apple Music (Millionen Songs) | ❌ | ✅ |
+| Eigene MP3s abspielen | ❌ | ✅ |
+| Apple Music (100 Mio. Songs) | ❌ | ✅ |
 | Podcasts & Hörspiele | ❌ | ✅ |
-| Webradio | ❌ | ✅ |
+| Kindgerechtes Webradio | ❌ | ✅ |
 | Elternbereich | ✅ | ✅ |
-| Inhalte ohne Zusatzkosten | ❌ | ✅ |
-| Nachhaltigkeit | ❌ Plastik | ✅ Upcycling |
+| Inhalte ohne Nachkaufen | ❌ | ✅ |
+| Nachhaltigkeit (Upcycling) | ❌ | ✅ |
 
-## Nachhaltigkeit: Ein echter Unterschied
+---
 
-Jede Tonie-Figur ist aus Plastik und wird speziell für die Box hergestellt. Die RadauApp hingegen haucht einem alten iPhone, das sonst in der Schublade verstaubt, neues Leben ein. Das spart Ressourcen und Elektronikschrott.
+## Warum ist die RadauApp nachhaltiger?
 
-## Fazit
+- Jede Tonie-Figur ist neu produziertes Plastik.
+- Die RadauApp nutzt ein bereits vorhandenes Gerät.
+- Altes iPhone = kein neuer Elektronikschrott.
+- Kein Verlieren von Figuren, kein Nachkaufen.
 
-Wenn du bereits ein altes iPhone hast, ist die Entscheidung einfach: Die RadauApp ist kostenlos, bietet mehr Inhalte und ist nachhaltiger. Die Toniebox punktet mit der haptischen Figur als Bedienkonzept – aber für den Preis gibt es heute bessere Alternativen.
+---
+
+## Für wen eignet sich die Toniebox – für wen die RadauApp?
+
+**Toniebox ist besser, wenn:**
+- Das Kind das haptische Bedienkonzept mit Figuren liebt.
+- Kein altes iPhone verfügbar ist.
+- Offline-Nutzung ohne WLAN wichtig ist.
+
+**RadauApp ist besser, wenn:**
+- Ein altes iPhone vorhanden ist.
+- Niedrige Kosten wichtig sind.
+- Viele verschiedene Inhalte gewünscht werden.
+- Nachhaltigkeit eine Rolle spielt.
 
 **[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
+
+  // ─── ALTES IPHONE ────────────────────────────────────────────────────────
   {
     slug: "altes-iphone-kindermusikbox",
     lang: "de",
@@ -77,58 +108,292 @@ Wenn du bereits ein altes iPhone hast, ist die Entscheidung einfach: Die RadauAp
     author: "RadauApp Team",
     tags: ["altes iPhone", "Upcycling", "Einrichtung", "Kinder"],
     readingTime: 5,
+    faqSchema: [
+      { question: "Welches alte iPhone eignet sich als Kindermusikbox?", answer: "Alle iPhones ab iPhone 6s mit iOS 16 oder neuer sind geeignet. Das sind Geräte ab 2015. Gebraucht sind diese für 20–40€ erhältlich." },
+      { question: "Wie richte ich ein altes iPhone als Kindermusikbox ein?", answer: "1. RadauApp kostenlos im App Store installieren. 2. Elternbereich öffnen und Inhalte hinzufügen. 3. Optional: Geführten Zugriff aktivieren. Das dauert ca. 10 Minuten." },
+    ],
     content: `
-Irgendwo in der Schublade liegt es: das alte iPhone. Zu schade zum Wegwerfen, zu alt für den Alltag. Mit der **RadauApp** bekommt es einen neuen Job – als kindersichere Musikbox für deine Kleinen.
+## Welches alte iPhone eignet sich als Kindermusikbox?
 
-## Welches iPhone ist geeignet?
+**Geeignet sind alle iPhones ab iPhone 6s** mit iOS 16 oder neuer. Das sind Geräte ab dem Jahr 2015.
 
-Die RadauApp läuft auf **iPhone 6s oder neuer** mit iOS 16+. Das bedeutet: Geräte ab 2015 sind dabei. Fast jede Familie hat noch so ein Gerät.
+**Geeignete Modelle im Überblick:**
+- iPhone 6s / 6s Plus (ab ~20€ gebraucht)
+- iPhone 7 / 7 Plus
+- iPhone 8 / 8 Plus
+- iPhone X, XS, XR
+- iPhone 11 und neuer
 
-Gebraucht ist ein iPhone 6s bereits für **20–40€** zu bekommen – ein unschlagbares Preis-Leistungs-Verhältnis im Vergleich zu jeder Spielzeugmusikübox.
+Gebraucht sind diese Geräte für **20–60€** erhältlich – deutlich günstiger als jede Spielzeugmusikübox.
 
-## Einrichtung in 10 Minuten
+---
 
-### 1. iPhone zurücksetzen (optional)
-Für maximale Performance: Einstellungen → Allgemein → iPhone übertragen oder zurücksetzen → Alle Inhalte & Einstellungen löschen.
+## Wie richte ich das iPhone als Kindermusikbox ein?
 
-### 2. RadauApp installieren
-[RadauApp im App Store](https://apps.apple.com/de/app/radauapp/id6745492017) herunterladen – kostenlos.
+**In 4 Schritten zur fertigen Kindermusikbox:**
 
-### 3. Elternbereich einrichten
-Beim ersten Start den Elternbereich aufrufen und Inhalte hinzufügen:
-- Apple Music Playlists
-- Lieblings-Podcasts (z.B. Kakadu, Kinder-Radio)
-- MP3-Dateien
+1. **iPhone zurücksetzen** (optional): Einstellungen → Allgemein → iPhone übertragen oder zurücksetzen → Alle Inhalte & Einstellungen löschen.
+2. **RadauApp installieren**: Kostenlos im App Store herunterladen.
+3. **Elternbereich einrichten**: Beim ersten Start Inhalte hinzufügen – Apple Music Playlists, Podcasts, MP3s oder Webradio.
+4. **Geführten Zugriff aktivieren**: Einstellungen → Bedienungshilfen → Geführter Zugriff. So bleibt das Kind in der App.
 
-### 4. Geführten Zugriff aktivieren (optional)
-Einstellungen → Bedienungshilfen → Geführter Zugriff → aktivieren. So bleibt das Kind in der App und kann nichts anderes aufrufen.
+**Gesamtdauer: ca. 10 Minuten.**
 
-## Tipps für den Alltag
+---
 
-- **Robuste Hülle** kaufen – Kinder lassen Dinge fallen
-- **Lautsprecher** anschließen für besseren Sound (Bluetooth oder Klinke)
-- **WLAN-only** Modus: Mobile Daten in den Einstellungen deaktivieren
+## Was kostet die Einrichtung?
 
-## Fazit
+- RadauApp: **kostenlos**
+- iPhone 6s gebraucht: **~20–40€** (oder bereits vorhanden)
+- Apple Music: optional, 5,99€/Monat für Einzelpersonen
 
-10 Minuten Einrichtung, null Euro Extrakosten (wenn du das iPhone bereits hast) – und dein Kind hat eine Musikbox, die mit dem Alter mitwächst. Keine Figuren, die verloren gehen. Keine Inhalte, die ausverkauft sind.
+Zum Vergleich: Eine neue Toniebox kostet ~100€, jede Figur 15–20€.
 
-**[Jetzt kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+---
+
+## Tipps für den Alltag mit der Kinder-Musikbox
+
+- **Robuste Hülle** kaufen – Kinder lassen Dinge fallen.
+- **Lautsprecher** anschließen für besseren Sound (Bluetooth oder Klinke).
+- **Mobile Daten deaktivieren**: Einstellungen → Mobilfunk → alles ausschalten.
+- **Bildschirmzeit einrichten**: Für zusätzliche Kindersicherung.
+
+---
+
+## Welche Inhalte kann ich in der RadauApp nutzen?
+
+- Apple Music Playlists und Alben
+- Eigene MP3-Dateien
+- Podcast-Feeds (z.B. Kakadu, Checker Tobi, TKKG)
+- Webradio-Sender für Kinder (z.B. Radio Teddy)
+
+**[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
+
+  // ─── APPLE MUSIC KINDER ──────────────────────────────────────────────────
+  {
+    slug: "apple-music-kinder-einrichten",
+    lang: "de",
+    title: "Apple Music für Kinder einrichten: So geht's kindersicher",
+    description: "Apple Music kindersicher machen: Familienfreigabe, Inhaltsfilter und die RadauApp als kindgerechte Oberfläche. Schritt für Schritt erklärt.",
+    date: "2026-05-21",
+    author: "RadauApp Team",
+    tags: ["Apple Music Kinder", "Familienfreigabe", "kindersicher", "Einrichtung"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "Wie mache ich Apple Music kindersicher?", answer: "Apple Music wird kindersicher durch: 1. Familienfreigabe einrichten. 2. Kinderkonto erstellen. 3. Kommunikations- und Inhaltseinschränkungen aktivieren. 4. RadauApp als kindgerechte Oberfläche nutzen." },
+      { question: "Kann ein Kind Apple Music alleine bedienen?", answer: "Mit der RadauApp ja. Die App zeigt große Kacheln mit Bildern statt Text. Kinder ab 2 Jahren können damit selbstständig Musik auswählen – ganz ohne Lesekenntnisse." },
+      { question: "Was kostet Apple Music für Familien?", answer: "Apple Music Familienabo kostet 16,99€/Monat für bis zu 6 Personen. Das Einzelabo kostet 10,99€/Monat." },
+    ],
+    content: `
+## Wie mache ich Apple Music kindersicher?
+
+Apple Music allein ist nicht für Kinder optimiert – die Oberfläche ist zu komplex, und es gibt keine Kindersicherung direkt in der App. Mit der richtigen Einrichtung wird es aber zur perfekten Kinderunterhaltung.
+
+**In 4 Schritten zu kinderfreundlichem Apple Music:**
+
+1. **Familienfreigabe einrichten**: Einstellungen → [Dein Name] → Familienfreigabe → Mitglied hinzufügen.
+2. **Kinderkonto erstellen**: Für Kinder unter 13 Jahren ein eigenes Apple-ID-Konto anlegen.
+3. **Inhaltseinschränkungen aktivieren**: Einstellungen → Bildschirmzeit → Inhalts- & Datenschutzbeschränkungen → Musik → "Sauber" auswählen.
+4. **RadauApp installieren**: Als kindgerechte Oberfläche für Apple Music – große Kacheln, keine Texte, intuitiv.
+
+---
+
+## Was kostet Apple Music für Familien?
+
+| Abo | Preis | Personen |
+|---|---|---|
+| Einzelperson | 10,99€/Monat | 1 |
+| Familie | 16,99€/Monat | bis zu 6 |
+| Apple One Familie | 25,95€/Monat | bis zu 6 + TV, Arcade, iCloud |
+
+---
+
+## Warum reicht Apple Music allein nicht für Kinder?
+
+- Die Suchfunktion setzt Lesekenntnisse voraus.
+- Kein Schutz vor ungeeigneten Inhalten ohne Einschränkungen.
+- Keine kindgerechte Kacheloberfläche.
+- Kein Elternbereich zum Verwalten der Inhalte.
+
+**Die RadauApp löst all diese Probleme:** Sie läuft auf Apple Music und bietet eine kindgerechte Oberfläche mit großen Bildkacheln, die ohne Lesen funktioniert.
+
+---
+
+## Welche Inhalte eignen sich für Kinder auf Apple Music?
+
+- Kinderlieder-Playlists (z.B. "Kinderlieder", "Die Sendung mit der Maus")
+- Hörspiele als Alben (Benjamin Blümchen, Bibi Blocksberg, TKKG)
+- Entspannungsmusik für Kinder
+- Klassik für Kinder
+
+**[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── HOERSPIELE KOSTENLOS ────────────────────────────────────────────────
+  {
+    slug: "hoerspiele-kinder-kostenlos",
+    lang: "de",
+    title: "Hörspiele für Kinder kostenlos: Die besten Quellen im Überblick",
+    description: "Wo gibt es kostenlose Hörspiele und Podcasts für Kinder? Wir listen die besten Quellen – von ARD bis Spotify – und zeigen, wie du sie in der RadauApp nutzt.",
+    date: "2026-05-21",
+    author: "RadauApp Team",
+    tags: ["Hörspiele Kinder kostenlos", "Podcasts Kinder", "ARD", "Spotify"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Wo gibt es kostenlose Hörspiele für Kinder?", answer: "Kostenlose Hörspiele für Kinder gibt es bei: ARD Audiothek (Kakadu, Checker Tobi), Spotify (kostenlos mit Werbung), Apple Podcasts, KIKA, SWR Kindernetz und YouTube Music." },
+      { question: "Welche kostenlosen Kinder-Podcasts gibt es?", answer: "Empfehlenswerte kostenlose Kinder-Podcasts: Kakadu (Deutschlandfunk), Checker Tobi (BR), Die Sendung mit der Maus (WDR), Maus-Türöffner-Tag, Pur+ Kinderpodcast." },
+    ],
+    content: `
+## Wo gibt es kostenlose Hörspiele für Kinder?
+
+Es gibt viele gute und völlig kostenlose Quellen für Kinder-Hörspiele und Podcasts.
+
+**Die besten kostenlosen Quellen im Überblick:**
+
+- **ARD Audiothek**: Kakadu, Checker Tobi, Sendung mit der Maus – alles kostenlos, werbefrei.
+- **Apple Podcasts**: Tausende Kinder-Podcasts, komplett kostenlos.
+- **Spotify**: Kostenlos mit Werbung, viele Kinder-Inhalte.
+- **KIKA (kika.de)**: Hörspiele zum Stream, kostenlos.
+- **SWR Kindernetz**: Regionale Inhalte, kostenlos.
+- **Deutschlandfunk Nova**: Wissenschaft für Kinder.
+
+---
+
+## Die besten kostenlosen Kinder-Podcasts
+
+| Podcast | Sender | Altersgruppe |
+|---|---|---|
+| Kakadu | Deutschlandfunk | 6–12 Jahre |
+| Checker Tobi | BR | 6–12 Jahre |
+| Die Sendung mit der Maus | WDR | 4–8 Jahre |
+| Pur+ | ZDF | 8–14 Jahre |
+| Der Expodcast | NDR | 6–10 Jahre |
+| Kinder-Uni | Verschiedene | 8–14 Jahre |
+
+---
+
+## Wie nutze ich diese Podcasts in der RadauApp?
+
+**In 3 Schritten:**
+
+1. **Feed-URL kopieren**: Beim gewünschten Podcast die RSS-Feed-URL suchen (meist als "RSS" oder "Podcast-Feed" gekennzeichnet).
+2. **RadauApp öffnen**: Elternbereich aufrufen.
+3. **Feed hinzufügen**: URL einfügen, Titelbild wählen – fertig.
+
+Das Kind sieht danach nur das Kachelbild und kann den Podcast per Tipp starten – ohne Lesen, ohne Suchen.
+
+---
+
+## Sind Hörspiele gut für Kinder?
+
+**Vorteile von Hörspielen für Kinder:**
+- Fördern die Fantasie und Vorstellungskraft.
+- Verbessern das Sprachverständnis und den Wortschatz.
+- Keine Bildschirmzeit – schont die Augen.
+- Beruhigen und helfen beim Einschlafen.
+- Fördern die Konzentrationsfähigkeit.
+
+**[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── NACHHALTIGKEIT ──────────────────────────────────────────────────────
+  {
+    slug: "nachhaltiges-kinderspielzeug-digitales",
+    lang: "de",
+    title: "Nachhaltiges digitales Kinderspielzeug: Upcycling statt Neukauf",
+    description: "Digitales Spielzeug muss nicht immer neu sein. Wir zeigen, warum ein altes iPhone als Kindermusikbox nachhaltiger ist als Toniebox, Tigerbox und Co.",
+    date: "2026-05-21",
+    author: "RadauApp Team",
+    tags: ["nachhaltiges Spielzeug", "Upcycling", "Elektronikschrott", "Toniebox"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Was ist nachhaltiges digitales Kinderspielzeug?", answer: "Nachhaltiges digitales Kinderspielzeug nutzt vorhandene Geräte statt neue zu kaufen. Ein altes iPhone mit der RadauApp ist nachhaltiger als eine neue Toniebox, weil kein neues Plastik produziert wird und Elektronikschrott vermieden wird." },
+      { question: "Wie viel Elektronikschrott produziert eine Toniebox?", answer: "Eine Toniebox plus 10 Tonie-Figuren entspricht ca. 500–700g neuem Plastik und Elektronik. Dazu kommen neue Batterien. Ein altes iPhone erzeugt keinen neuen Elektronikschrott – es wird nur weitergenutzt." },
+    ],
+    content: `
+## Was ist nachhaltiges digitales Kinderspielzeug?
+
+Nachhaltiges digitales Spielzeug vermeidet die Produktion neuer Geräte und nutzt stattdessen vorhandene Hardware.
+
+**Das Prinzip: Upcycling statt Neukauf**
+- Altes iPhone → Kindermusikbox
+- Kein neues Plastik produziert
+- Kein neuer Elektronikschrott
+- Ressourcen gespart
+
+---
+
+## Wie nachhaltig sind Toniebox, Tigerbox und Co.?
+
+| Produkt | Neues Plastik | Batteriebetrieb | Figuren erforderlich |
+|---|---|---|---|
+| Toniebox | ~300g Box + Figuren | ✅ | ✅ Pflicht |
+| Tigerbox | ~200g | ✅ | ❌ |
+| Tonuino (DIY) | Niedrig | ✅ | ❌ |
+| **RadauApp** | **0g** | ❌ Netzbetrieb | ❌ |
+
+**Jede Tonie-Figur ist ca. 30–50g Plastik** – bei 10 Figuren sind das 300–500g reine Neuprodukition.
+
+---
+
+## Warum ist ein altes iPhone nachhaltiger?
+
+- Das Gerät existiert bereits – kein neuer CO₂-Ausstoß durch Produktion.
+- Kein neues Plastik für Gehäuse oder Figuren.
+- Längere Nutzungsdauer des Geräts = weniger Elektronikschrott.
+- Kein Batteriebetrieb nötig (Netzteil oder bereits vorhandenes Kabel).
+
+**Laut Schätzungen verursacht die Produktion eines neuen Smartphones ca. 70 kg CO₂.** Wer ein altes iPhone weiternutzt statt ein neues Spielzeuggerät zu kaufen, spart diese Emissionen komplett.
+
+---
+
+## Was können Eltern tun?
+
+**5 einfache Schritte für nachhaltigere Kinderunterhaltung:**
+
+1. Altes iPhone aus der Schublade holen.
+2. RadauApp kostenlos installieren.
+3. Vorhandene Apple Music Inhalte nutzen.
+4. Kostenlose Podcasts einbinden.
+5. Kein neues Spielzeuggerät kaufen.
+
+**[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── ENGLISH ─────────────────────────────────────────────────────────────
   {
     slug: "toniebox-alternative",
     lang: "en",
     title: "Toniebox Alternative: Why an Old iPhone is the Smarter Choice",
-    description: "The Toniebox costs over €100 plus expensive Tonie figures. We show why RadauApp on an old iPhone is the smarter, more sustainable and cheaper alternative.",
+    description: "The Toniebox costs over €100 plus expensive Tonie figures. RadauApp on an old iPhone is the smarter, more sustainable and cheaper alternative.",
     date: "2026-05-21",
     author: "RadauApp Team",
     tags: ["Toniebox alternative", "kids music box", "sustainable", "comparison"],
-    readingTime: 6,
+    readingTime: 5,
+    faqSchema: [
+      { question: "What is a good alternative to the Toniebox?", answer: "RadauApp on an old iPhone is a free, sustainable Toniebox alternative. It works on iPhone 6s and above, supports Apple Music, MP3s, podcasts and web radio." },
+      { question: "How much does RadauApp cost compared to Toniebox?", answer: "RadauApp is free. A used iPhone 6s costs around €20–40. The Toniebox costs ~€100, plus €15–20 per Tonie figure." },
+    ],
     content: `
-The **Toniebox** has become a staple in many children's rooms. But the entry price of over €100 for the box – plus €15–20 per Tonie figure – adds up quickly. We present a smart alternative: **RadauApp** on an old iPhone.
+## What is a good alternative to the Toniebox?
 
-## What Does the Toniebox Really Cost?
+**RadauApp** is a free iOS app that turns an old iPhone into a child-safe music box. It is the cheapest and most sustainable alternative to the Toniebox – no plastic figures, no ongoing extra costs.
+
+**In short:**
+- Free in the App Store
+- Works on iPhone 6s or newer
+- Supports Apple Music, MP3s, podcasts and web radio
+- Child-friendly interface without reading skills required
+- Parental controls included
+
+---
+
+## What does the Toniebox really cost?
 
 | Product | Cost |
 |---|---|
@@ -137,53 +402,55 @@ The **Toniebox** has become a staple in many children's rooms. But the entry pri
 | 10 figures | ~€150–200 |
 | **Total** | **~€250–300** |
 
-On top of that: Tonies can get lost, break, or simply lose their appeal over time.
+**RadauApp costs €0** – provided you have an old iPhone. A used iPhone 6s starts at €20–40.
 
-## RadauApp: What Do You Need?
+---
 
-- An old iPhone (iPhone 6s or newer, iOS 16+) – often already at home or ~€50 used
-- The RadauApp (free in the App Store)
-- Optional: Apple Music subscription (already have one?)
-
-That's it. No plastic figure chaos, no repurchasing, no losing pieces.
-
-## Feature Comparison
+## Feature comparison
 
 | Feature | Toniebox | RadauApp |
 |---|---|---|
-| Kid-friendly interface | ✅ | ✅ |
+| Child-friendly interface | ✅ | ✅ |
 | Own MP3s | ❌ | ✅ |
-| Apple Music (millions of songs) | ❌ | ✅ |
+| Apple Music (100M songs) | ❌ | ✅ |
 | Podcasts & audiobooks | ❌ | ✅ |
 | Web radio | ❌ | ✅ |
 | Parental controls | ✅ | ✅ |
 | Content without extra costs | ❌ | ✅ |
-| Sustainability | ❌ Plastic | ✅ Upcycling |
+| Sustainability (upcycling) | ❌ | ✅ |
 
-## Sustainability: A Real Difference
-
-Every Tonie figure is made of plastic produced specifically for the box. RadauApp breathes new life into an old iPhone that would otherwise collect dust. This saves resources and reduces e-waste.
-
-## Conclusion
-
-If you already have an old iPhone, the decision is simple: RadauApp is free, offers more content, and is more sustainable. The Toniebox scores with its tactile figure concept – but for the price, there are better alternatives today.
-
-**[Download RadauApp free now →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+**[Download RadauApp free →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
+
+  // ─── FRENCH ──────────────────────────────────────────────────────────────
   {
     slug: "toniebox-alternative",
     lang: "fr",
     title: "Alternative à la Toniebox : Pourquoi un ancien iPhone est le meilleur choix",
-    description: "La Toniebox coûte plus de 100€ et nécessite des figurines coûteuses. Nous montrons pourquoi RadauApp sur un ancien iPhone est l'alternative plus intelligente, durable et économique.",
+    description: "La Toniebox coûte plus de 100€. RadauApp sur un ancien iPhone est l'alternative plus intelligente, durable et économique.",
     date: "2026-05-21",
     author: "RadauApp Team",
-    tags: ["alternative Toniebox", "boîte à musique enfants", "durable", "comparaison"],
-    readingTime: 6,
+    tags: ["alternative Toniebox", "boîte à musique enfants", "durable"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "Quelle est la meilleure alternative à la Toniebox ?", answer: "RadauApp sur un ancien iPhone est une alternative gratuite et durable à la Toniebox. Elle fonctionne sur iPhone 6s et plus, avec Apple Music, MP3, podcasts et radio web." },
+    ],
     content: `
-La **Toniebox** est devenue incontournable dans de nombreuses chambres d'enfants. Mais le prix d'entrée de plus de 100€ pour la box – plus 15–20€ par figurine Tonie – s'accumule vite. Nous présentons une alternative intelligente : **RadauApp** sur un ancien iPhone.
+## Quelle est la meilleure alternative à la Toniebox ?
 
-## Ce que coûte vraiment la Toniebox
+**RadauApp** est une application iOS gratuite qui transforme un ancien iPhone en lecteur audio pour enfants.
+
+**En bref :**
+- Gratuit sur l'App Store
+- Fonctionne sur iPhone 6s ou plus récent
+- Apple Music, MP3, podcasts et radio web
+- Interface simple sans besoin de lire
+- Contrôle parental inclus
+
+---
+
+## Comparaison des coûts
 
 | Produit | Coût |
 |---|---|
@@ -192,49 +459,54 @@ La **Toniebox** est devenue incontournable dans de nombreuses chambres d'enfants
 | 10 figurines | ~150–200€ |
 | **Total** | **~250–300€** |
 
-En plus : les Tonies peuvent se perdre, se casser ou simplement ne plus intéresser avec le temps.
+**RadauApp coûte 0€.** Un iPhone 6s d'occasion coûte ~20–40€.
 
-## RadauApp : De quoi avez-vous besoin ?
-
-- Un ancien iPhone (iPhone 6s ou plus récent, iOS 16+) – souvent déjà à la maison ou ~50€ d'occasion
-- RadauApp (gratuit sur l'App Store)
-- Optionnel : abonnement Apple Music (vous en avez déjà un ?)
-
-C'est tout. Pas de chaos de figurines en plastique, pas de rachats, pas de pertes.
+---
 
 ## Comparaison des fonctionnalités
 
 | Fonction | Toniebox | RadauApp |
 |---|---|---|
-| Interface adaptée aux enfants | ✅ | ✅ |
-| Propres MP3 | ❌ | ✅ |
-| Apple Music (millions de chansons) | ❌ | ✅ |
-| Podcasts & livres audio | ❌ | ✅ |
+| Interface enfant | ✅ | ✅ |
+| MP3 personnels | ❌ | ✅ |
+| Apple Music | ❌ | ✅ |
+| Podcasts | ❌ | ✅ |
 | Radio web | ❌ | ✅ |
 | Contrôle parental | ✅ | ✅ |
-| Contenu sans frais supplémentaires | ❌ | ✅ |
-| Durabilité | ❌ Plastique | ✅ Upcycling |
-
-## Conclusion
-
-Si vous avez déjà un ancien iPhone, la décision est simple : RadauApp est gratuit, offre plus de contenu et est plus durable.
+| Durabilité | ❌ | ✅ |
 
 **[Télécharger RadauApp gratuitement →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
+
+  // ─── SPANISH ─────────────────────────────────────────────────────────────
   {
     slug: "toniebox-alternative",
     lang: "es",
     title: "Alternativa a Toniebox: Por qué un iPhone antiguo es la mejor elección",
-    description: "La Toniebox cuesta más de 100€ y requiere figuras costosas. Mostramos por qué RadauApp en un iPhone antiguo es la alternativa más inteligente, sostenible y económica.",
+    description: "La Toniebox cuesta más de 100€. RadauApp en un iPhone antiguo es la alternativa más inteligente, sostenible y económica.",
     date: "2026-05-21",
     author: "RadauApp Team",
-    tags: ["alternativa Toniebox", "caja de música niños", "sostenible", "comparación"],
-    readingTime: 6,
+    tags: ["alternativa Toniebox", "música niños", "sostenible"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "¿Cuál es la mejor alternativa a la Toniebox?", answer: "RadauApp en un iPhone antiguo es una alternativa gratuita y sostenible a la Toniebox. Funciona en iPhone 6s o más nuevo, con Apple Music, MP3, podcasts y radio web." },
+    ],
     content: `
-La **Toniebox** se ha convertido en un elemento imprescindible en muchas habitaciones infantiles. Pero el precio de entrada de más de 100€ por la caja – más 15–20€ por cada figura Tonie – se acumula rápidamente. Presentamos una alternativa inteligente: **RadauApp** en un iPhone antiguo.
+## ¿Cuál es la mejor alternativa a la Toniebox?
 
-## ¿Cuánto cuesta realmente la Toniebox?
+**RadauApp** es una app iOS gratuita que convierte un iPhone antiguo en un reproductor de audio para niños.
+
+**En resumen:**
+- Gratis en la App Store
+- Funciona en iPhone 6s o más nuevo
+- Apple Music, MP3, podcasts y radio web
+- Interfaz simple sin necesidad de leer
+- Control parental incluido
+
+---
+
+## Comparación de costes
 
 | Producto | Coste |
 |---|---|
@@ -243,63 +515,23 @@ La **Toniebox** se ha convertido en un elemento imprescindible en muchas habitac
 | 10 figuras | ~150–200€ |
 | **Total** | **~250–300€** |
 
-Además: las figuras Tonie pueden perderse, romperse o simplemente dejar de interesar con el tiempo.
+**RadauApp cuesta 0€.** Un iPhone 6s de segunda mano cuesta ~20–40€.
 
-## RadauApp: ¿Qué necesitas?
+---
 
-- Un iPhone antiguo (iPhone 6s o más nuevo, iOS 16+) – a menudo ya en casa o ~50€ de segunda mano
-- RadauApp (gratis en la App Store)
-- Opcional: suscripción a Apple Music (¿ya tienes una?)
+## Comparación de funciones
 
-Eso es todo. Sin caos de figuras de plástico, sin recompras, sin pérdidas.
-
-## Conclusión
-
-Si ya tienes un iPhone antiguo, la decisión es sencilla: RadauApp es gratuito, ofrece más contenido y es más sostenible.
+| Función | Toniebox | RadauApp |
+|---|---|---|
+| Interfaz para niños | ✅ | ✅ |
+| MP3 propios | ❌ | ✅ |
+| Apple Music | ❌ | ✅ |
+| Podcasts | ❌ | ✅ |
+| Radio web | ❌ | ✅ |
+| Control parental | ✅ | ✅ |
+| Sostenibilidad | ❌ | ✅ |
 
 **[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
-    `
-  },
-  {
-    slug: "altes-iphone-kindermusikbox",
-    lang: "en",
-    title: "Repurpose an Old iPhone: The Perfect Music Box for Kids",
-    description: "Got an old iPhone lying around? With RadauApp you turn it into a child-safe music box. Here's how to set it up in 10 minutes.",
-    date: "2026-05-21",
-    author: "RadauApp Team",
-    tags: ["old iPhone", "upcycling", "setup", "kids"],
-    readingTime: 5,
-    content: `
-Somewhere in a drawer it sits: the old iPhone. Too good to throw away, too old for everyday use. With **RadauApp**, it gets a new job – as a child-safe music box for your little ones.
-
-## Which iPhone Is Compatible?
-
-RadauApp runs on **iPhone 6s or newer** with iOS 16+. That means devices from 2015 onwards qualify. Almost every family still has one of these.
-
-A used iPhone 6s can be found for **€20–40** – an unbeatable value compared to any toy music box.
-
-## Setup in 10 Minutes
-
-### 1. Reset iPhone (optional)
-For maximum performance: Settings → General → Transfer or Reset iPhone → Erase All Content and Settings.
-
-### 2. Install RadauApp
-Download [RadauApp from the App Store](https://apps.apple.com/de/app/radauapp/id6745492017) – free.
-
-### 3. Set up parental area
-On first launch, open the parental area and add content:
-- Apple Music playlists
-- Favorite podcasts
-- MP3 files
-
-### 4. Enable Guided Access (optional)
-Settings → Accessibility → Guided Access → enable. This keeps children in the app and prevents them from accessing anything else.
-
-## Conclusion
-
-10 minutes of setup, zero extra costs (if you already have the iPhone) – and your child has a music box that grows with them.
-
-**[Download free now →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
 ];
@@ -317,36 +549,8 @@ export function getAllSlugs(): string[] {
 }
 
 export const blogTranslations = {
-  de: {
-    title: "Blog",
-    subtitle: "Tipps, Vergleiche und Wissenswertes rund um die RadauApp und nachhaltige Kinderunterhaltung.",
-    readMore: "Weiterlesen",
-    readingTime: "Min. Lesezeit",
-    backToBlog: "← Zurück zum Blog",
-    by: "Von",
-  },
-  en: {
-    title: "Blog",
-    subtitle: "Tips, comparisons and insights about RadauApp and sustainable kids entertainment.",
-    readMore: "Read more",
-    readingTime: "min read",
-    backToBlog: "← Back to blog",
-    by: "By",
-  },
-  fr: {
-    title: "Blog",
-    subtitle: "Conseils, comparaisons et informations sur RadauApp et le divertissement durable pour enfants.",
-    readMore: "Lire la suite",
-    readingTime: "min de lecture",
-    backToBlog: "← Retour au blog",
-    by: "Par",
-  },
-  es: {
-    title: "Blog",
-    subtitle: "Consejos, comparaciones e información sobre RadauApp y el entretenimiento sostenible para niños.",
-    readMore: "Leer más",
-    readingTime: "min de lectura",
-    backToBlog: "← Volver al blog",
-    by: "Por",
-  },
+  de: { title: "Blog", subtitle: "Tipps, Vergleiche und Wissenswertes rund um die RadauApp.", readMore: "Weiterlesen", readingTime: "Min. Lesezeit", backToBlog: "← Zurück zum Blog", by: "Von" },
+  en: { title: "Blog", subtitle: "Tips, comparisons and insights about RadauApp.", readMore: "Read more", readingTime: "min read", backToBlog: "← Back to blog", by: "By" },
+  fr: { title: "Blog", subtitle: "Conseils, comparaisons et informations sur RadauApp.", readMore: "Lire la suite", readingTime: "min de lecture", backToBlog: "← Retour au blog", by: "Par" },
+  es: { title: "Blog", subtitle: "Consejos, comparaciones e información sobre RadauApp.", readMore: "Leer más", readingTime: "min de lectura", backToBlog: "← Volver al blog", by: "Por" },
 };

@@ -32,6 +32,17 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
       publishedTime: post.date,
       authors: [post.author],
     },
+    other: post.faqSchema ? {
+      'application/ld+json': JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": post.faqSchema.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+        }))
+      })
+    } : {},
   };
 }
 
