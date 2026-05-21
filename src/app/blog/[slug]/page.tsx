@@ -32,17 +32,39 @@ export async function generateMetadata({ params, searchParams }: Props): Promise
       publishedTime: post.date,
       authors: [post.author],
     },
-    other: post.faqSchema ? {
+    other: {
       'application/ld+json': JSON.stringify({
         "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": post.faqSchema.map(faq => ({
-          "@type": "Question",
-          "name": faq.question,
-          "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
-        }))
-      })
-    } : {},
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.description,
+        "datePublished": post.date,
+        "author": {
+          "@type": "Person",
+          "name": post.author,
+          "url": "https://radau.app/blog/unsere-geschichte"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "RadauApp",
+          "logo": { "@type": "ImageObject", "url": "https://radau.app/RadauAppLogo.png" }
+        },
+        "keywords": post.tags.join(", "),
+        "inLanguage": post.lang,
+        "url": `https://radau.app/blog/${post.slug}?lang=${post.lang}`
+      }),
+      ...(post.faqSchema ? {
+        'application/ld+json-faq': JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": post.faqSchema.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+          }))
+        })
+      } : {})
+    },
   };
 }
 
