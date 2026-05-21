@@ -2273,3 +2273,510 @@ Der **Hörbert** ist ein deutscher MP3-Player speziell für Kinder – robust, e
 **[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
+
+  // ─── YOTO EN/FR/ES ───────────────────────────────────────────────────────
+  {
+    slug: "yoto-player-alternative",
+    lang: "en",
+    title: "Yoto Player Alternative: The 5 Best Options for 2026",
+    description: "The Yoto Player costs over €110 plus expensive cards. We show the best alternatives – including a free option with Apple Music.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["Yoto Player alternative", "kids music box", "comparison", "cheap"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "What is a good alternative to the Yoto Player?", answer: "The best Yoto Player alternatives are: RadauApp (free, old iPhone), Toniebox (~€100), Tigerbox Touch (~€80), Tonuino (DIY ~€30) and Hörbert (~€200). RadauApp is the cheapest option with the most content." },
+    ],
+    content: `
+## What is a good alternative to the Yoto Player?
+
+The **Yoto Player** is a popular children's audio player with NFC cards and a display. Price: ~€110 plus €5–15 per card.
+
+**The 5 best alternatives:**
+
+1. **RadauApp** – Free, old iPhone, Apple Music + Podcasts + Web radio
+2. **Toniebox** – ~€100, tactile figures, robust hardware
+3. **Tigerbox Touch** – ~€80, touchscreen, custom content possible
+4. **Tonuino** (DIY) – ~€30 parts, NFC cards, open source
+5. **Hörbert** – ~€200, MP3 player, no subscription costs
+
+---
+
+## Feature comparison
+
+| Product | Price | Custom content | Apple Music | Podcasts | Web radio |
+|---|---|---|---|---|---|
+| Yoto Player | ~€110 + cards | ❌ | ❌ | ❌ | ❌ |
+| RadauApp | €0 | ✅ | ✅ | ✅ | ✅ |
+| Toniebox | ~€100 + figures | ❌ | ❌ | ❌ | ❌ |
+| Tigerbox Touch | ~€80 | ✅ | ❌ | ✅ | ✅ |
+| Tonuino | ~€30 | ✅ | ❌ | ❌ | ❌ |
+| Hörbert | ~€200 | ✅ | ❌ | ❌ | ❌ |
+
+**[Download RadauApp free →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "yoto-player-alternative",
+    lang: "fr",
+    title: "Alternative au Yoto Player : Les 5 meilleures options pour 2026",
+    description: "Le Yoto Player coûte plus de 110€ plus des cartes coûteuses. Nous montrons les meilleures alternatives – dont une option gratuite avec Apple Music.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["alternative Yoto Player", "boîte musique enfants", "comparaison"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "Quelle est la meilleure alternative au Yoto Player ?", answer: "Les meilleures alternatives au Yoto Player sont : RadauApp (gratuit, ancien iPhone), Toniebox (~100€), Tigerbox Touch (~80€), Tonuino (DIY ~30€) et Hörbert (~200€)." },
+    ],
+    content: `
+## Quelle est la meilleure alternative au Yoto Player ?
+
+Le **Yoto Player** est un lecteur audio populaire pour enfants avec des cartes NFC et un écran. Prix : ~110€ plus 5–15€ par carte.
+
+**Les 5 meilleures alternatives :**
+
+1. **RadauApp** – Gratuit, ancien iPhone, Apple Music + Podcasts + Radio web
+2. **Toniebox** – ~100€, figurines tactiles, matériel robuste
+3. **Tigerbox Touch** – ~80€, écran tactile, contenu personnalisé possible
+4. **Tonuino** (DIY) – ~30€, cartes NFC, open source
+5. **Hörbert** – ~200€, lecteur MP3, sans abonnement
+
+---
+
+## Comparaison des fonctionnalités
+
+| Produit | Prix | Contenu perso | Apple Music | Podcasts | Radio web |
+|---|---|---|---|---|---|
+| Yoto Player | ~110€ + cartes | ❌ | ❌ | ❌ | ❌ |
+| RadauApp | 0€ | ✅ | ✅ | ✅ | ✅ |
+| Toniebox | ~100€ + figurines | ❌ | ❌ | ❌ | ❌ |
+| Tigerbox Touch | ~80€ | ✅ | ❌ | ✅ | ✅ |
+| Hörbert | ~200€ | ✅ | ❌ | ❌ | ❌ |
+
+**[Télécharger RadauApp gratuitement →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "yoto-player-alternative",
+    lang: "es",
+    title: "Alternativa al Yoto Player: Las 5 mejores opciones para 2026",
+    description: "El Yoto Player cuesta más de 110€ más tarjetas caras. Mostramos las mejores alternativas, incluida una opción gratuita con Apple Music.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["alternativa Yoto Player", "música niños", "comparación"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "¿Cuál es la mejor alternativa al Yoto Player?", answer: "Las mejores alternativas al Yoto Player son: RadauApp (gratis, iPhone antiguo), Toniebox (~100€), Tigerbox Touch (~80€), Tonuino (DIY ~30€) y Hörbert (~200€)." },
+    ],
+    content: `
+## ¿Cuál es la mejor alternativa al Yoto Player?
+
+El **Yoto Player** es un popular reproductor de audio para niños con tarjetas NFC y pantalla. Precio: ~110€ más 5–15€ por tarjeta.
+
+**Las 5 mejores alternativas:**
+
+1. **RadauApp** – Gratis, iPhone antiguo, Apple Music + Podcasts + Radio web
+2. **Toniebox** – ~100€, figuras táctiles, hardware robusto
+3. **Tigerbox Touch** – ~80€, pantalla táctil, contenido personalizado posible
+4. **Tonuino** (DIY) – ~30€, tarjetas NFC, código abierto
+5. **Hörbert** – ~200€, reproductor MP3, sin suscripción
+
+---
+
+## Comparación de características
+
+| Producto | Precio | Contenido propio | Apple Music | Podcasts | Radio web |
+|---|---|---|---|---|---|
+| Yoto Player | ~110€ + tarjetas | ❌ | ❌ | ❌ | ❌ |
+| RadauApp | 0€ | ✅ | ✅ | ✅ | ✅ |
+| Toniebox | ~100€ + figuras | ❌ | ❌ | ❌ | ❌ |
+| Tigerbox Touch | ~80€ | ✅ | ❌ | ✅ | ✅ |
+| Hörbert | ~200€ | ✅ | ❌ | ❌ | ❌ |
+
+**[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── TIGERBOX EN/FR/ES ───────────────────────────────────────────────────
+  {
+    slug: "tigerbox-alternative",
+    lang: "en",
+    title: "Tigerbox Alternative: Cheaper Options with More Content",
+    description: "The Tigerbox costs ~€80 plus €5/month tigerticket. We show which alternatives are cheaper and offer more content.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["Tigerbox alternative", "tigerticket", "kids music box", "cheap"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "What is a good alternative to the Tigerbox?", answer: "Good alternatives to the Tigerbox are RadauApp (free on old iPhone), Toniebox (~€100) and Tonuino (DIY ~€30). RadauApp supports Apple Music, MP3s, podcasts and web radio with no monthly subscription." },
+      { question: "How much does the Tigerbox cost per month?", answer: "The Tigerbox Touch costs ~€80. The tigerticket for content costs €5/month or €50/year. Over 5 years the total cost is ~€330." },
+    ],
+    content: `
+## What does the Tigerbox really cost?
+
+The **Tigerbox Touch** costs ~€80. The **tigerticket** for content access costs €5/month or €50/year.
+
+| Period | Total cost |
+|---|---|
+| 1 year | ~€130 |
+| 3 years | ~€230 |
+| 5 years | ~€330 |
+
+**RadauApp costs €0 permanently** – provided you already have an Apple Music subscription.
+
+---
+
+## RadauApp as a Tigerbox alternative
+
+| Feature | Tigerbox | RadauApp |
+|---|---|---|
+| Child-friendly interface | ✅ | ✅ |
+| Apple Music | ❌ | ✅ |
+| Custom MP3s | ✅ | ✅ |
+| Podcasts (RSS) | ❌ | ✅ |
+| Web radio | ✅ | ✅ |
+| Monthly costs | €5/month | €0 |
+| Hardware needed | ~€80 | €0 (old iPhone) |
+
+**[Download RadauApp free →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "tigerbox-alternative",
+    lang: "fr",
+    title: "Alternative à la Tigerbox : Options moins chères avec plus de contenu",
+    description: "La Tigerbox coûte ~80€ plus 5€/mois de tigerticket. Nous montrons quelles alternatives sont moins chères et offrent plus de contenu.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["alternative Tigerbox", "tigerticket", "boîte musique enfants"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "Quelle est la meilleure alternative à la Tigerbox ?", answer: "Les bonnes alternatives à la Tigerbox sont RadauApp (gratuit sur ancien iPhone), Toniebox (~100€) et Tonuino (DIY ~30€). RadauApp supporte Apple Music, MP3, podcasts et radio web sans abonnement mensuel." },
+    ],
+    content: `
+## Combien coûte vraiment la Tigerbox ?
+
+La **Tigerbox Touch** coûte ~80€. Le **tigerticket** pour accéder aux contenus coûte 5€/mois ou 50€/an.
+
+| Période | Coût total |
+|---|---|
+| 1 an | ~130€ |
+| 3 ans | ~230€ |
+| 5 ans | ~330€ |
+
+**RadauApp coûte 0€ en permanence.**
+
+---
+
+## RadauApp comme alternative à la Tigerbox
+
+| Fonction | Tigerbox | RadauApp |
+|---|---|---|
+| Interface enfant | ✅ | ✅ |
+| Apple Music | ❌ | ✅ |
+| MP3 personnels | ✅ | ✅ |
+| Podcasts (RSS) | ❌ | ✅ |
+| Radio web | ✅ | ✅ |
+| Coûts mensuels | 5€/mois | 0€ |
+
+**[Télécharger RadauApp gratuitement →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "tigerbox-alternative",
+    lang: "es",
+    title: "Alternativa a Tigerbox: Opciones más baratas con más contenido",
+    description: "La Tigerbox cuesta ~80€ más 5€/mes de tigerticket. Mostramos qué alternativas son más baratas y ofrecen más contenido.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["alternativa Tigerbox", "tigerticket", "música niños"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "¿Cuál es la mejor alternativa a la Tigerbox?", answer: "Buenas alternativas a la Tigerbox son RadauApp (gratis en iPhone antiguo), Toniebox (~100€) y Tonuino (DIY ~30€). RadauApp soporta Apple Music, MP3, podcasts y radio web sin costes mensuales." },
+    ],
+    content: `
+## ¿Cuánto cuesta realmente la Tigerbox?
+
+La **Tigerbox Touch** cuesta ~80€. El **tigerticket** para contenidos cuesta 5€/mes o 50€/año.
+
+| Período | Coste total |
+|---|---|
+| 1 año | ~130€ |
+| 3 años | ~230€ |
+| 5 años | ~330€ |
+
+**RadauApp cuesta 0€ de forma permanente.**
+
+---
+
+## RadauApp como alternativa a la Tigerbox
+
+| Función | Tigerbox | RadauApp |
+|---|---|---|
+| Interfaz para niños | ✅ | ✅ |
+| Apple Music | ❌ | ✅ |
+| MP3 propios | ✅ | ✅ |
+| Podcasts (RSS) | ❌ | ✅ |
+| Radio web | ✅ | ✅ |
+| Costes mensuales | 5€/mes | 0€ |
+
+**[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── IPHONE OHNE APPLE ID EN/FR/ES ───────────────────────────────────────
+  {
+    slug: "iphone-kinder-ohne-apple-id",
+    lang: "en",
+    title: "Set Up a Kids iPhone Without an Apple ID: Step-by-Step Guide",
+    description: "Set up an old iPhone for kids without creating a separate Apple ID. Here's the easiest way using RadauApp.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["kids iPhone setup", "without Apple ID", "parental controls iPhone", "old iPhone"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "Can I set up an iPhone for kids without an Apple ID?", answer: "Yes. With RadauApp, an old iPhone can be used as a children's music box without creating a separate Apple ID for the child. The app is installed once with the parent's Apple ID. After that, no Apple ID is needed." },
+      { question: "How do I protect an iPhone from unwanted purchases by children?", answer: "To secure an iPhone: 1. Enable Screen Time and set a PIN. 2. Disable in-app purchases. 3. Enable Guided Access for RadauApp. 4. Disable mobile data." },
+    ],
+    content: `
+## Can I set up an iPhone for kids without an Apple ID?
+
+**Yes – RadauApp doesn't require a child Apple ID.**
+
+The app is installed once with the parent's Apple ID. After that it runs completely independently. The child needs no account, no password, no App Store access.
+
+---
+
+## Set up an iPhone for kids in 5 steps
+
+**What you need:**
+- An iPhone 6s or newer with iOS 16+
+- Your Apple ID (for installation only)
+- RadauApp (free)
+
+**Step by step:**
+
+1. **Install RadauApp**: Download from the App Store – once with your Apple ID.
+2. **Enable Screen Time**: Settings → Screen Time → set your own PIN.
+3. **Block app purchases**: Screen Time → Content & Privacy Restrictions → iTunes & App Store Purchases → Purchases → Don't Allow.
+4. **Enable Guided Access**: Settings → Accessibility → Guided Access. This keeps the child in RadauApp.
+5. **Disable mobile data**: Settings → Mobile Data → turn everything off.
+
+**Total time: about 15 minutes.**
+
+---
+
+## Which iPhone models are suitable?
+
+| Model | iOS 16 | Price used |
+|---|---|---|
+| iPhone 6s | ✅ | ~€20–30 |
+| iPhone 7 | ✅ | ~€30–50 |
+| iPhone 8 | ✅ | ~€50–80 |
+| iPhone X | ✅ | ~€80–120 |
+| iPhone 11 | ✅ | ~€150–200 |
+
+**[Download RadauApp free →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "iphone-kinder-ohne-apple-id",
+    lang: "fr",
+    title: "Configurer un iPhone pour enfants sans Apple ID : Guide étape par étape",
+    description: "Configurer un ancien iPhone pour enfants sans créer un identifiant Apple séparé. Voici la méthode la plus simple avec RadauApp.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["iPhone enfants configuration", "sans Apple ID", "contrôle parental iPhone"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "Peut-on configurer un iPhone pour enfants sans Apple ID ?", answer: "Oui. Avec RadauApp, un ancien iPhone peut être utilisé comme lecteur de musique pour enfants sans créer d'Apple ID séparé. L'app est installée une seule fois avec l'Apple ID du parent." },
+    ],
+    content: `
+## Peut-on configurer un iPhone pour enfants sans Apple ID ?
+
+**Oui – RadauApp ne nécessite pas d'Apple ID enfant.**
+
+L'app est installée une seule fois avec l'Apple ID du parent. Ensuite elle fonctionne de façon totalement autonome.
+
+---
+
+## Configurer un iPhone pour enfants en 5 étapes
+
+1. **Installer RadauApp** : Télécharger depuis l'App Store avec votre Apple ID.
+2. **Activer Temps d'écran** : Réglages → Temps d'écran → définir un code.
+3. **Bloquer les achats** : Temps d'écran → Restrictions → Achats dans l'app → Ne pas autoriser.
+4. **Activer l'Accès guidé** : Réglages → Accessibilité → Accès guidé.
+5. **Désactiver les données mobiles** : Réglages → Données mobiles → tout désactiver.
+
+**Durée totale : environ 15 minutes.**
+
+---
+
+## Quels modèles d'iPhone conviennent ?
+
+| Modèle | iOS 16 | Prix occasion |
+|---|---|---|
+| iPhone 6s | ✅ | ~20–30€ |
+| iPhone 7 | ✅ | ~30–50€ |
+| iPhone 8 | ✅ | ~50–80€ |
+| iPhone X | ✅ | ~80–120€ |
+
+**[Télécharger RadauApp gratuitement →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "iphone-kinder-ohne-apple-id",
+    lang: "es",
+    title: "Configurar un iPhone para niños sin Apple ID: Guía paso a paso",
+    description: "Configura un iPhone antiguo para niños sin crear un Apple ID separado. Aquí está la forma más sencilla usando RadauApp.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["iPhone niños configuración", "sin Apple ID", "control parental iPhone"],
+    readingTime: 5,
+    faqSchema: [
+      { question: "¿Se puede configurar un iPhone para niños sin Apple ID?", answer: "Sí. Con RadauApp, un iPhone antiguo puede usarse como reproductor de música para niños sin crear un Apple ID separado. La app se instala una vez con el Apple ID del padre." },
+    ],
+    content: `
+## ¿Se puede configurar un iPhone para niños sin Apple ID?
+
+**Sí – RadauApp no requiere un Apple ID infantil.**
+
+La app se instala una vez con el Apple ID del padre. Después funciona completamente de forma independiente.
+
+---
+
+## Configurar un iPhone para niños en 5 pasos
+
+1. **Instalar RadauApp**: Descargar desde la App Store con tu Apple ID.
+2. **Activar Tiempo de uso**: Ajustes → Tiempo de uso → establecer un código.
+3. **Bloquear compras**: Tiempo de uso → Restricciones → Compras en la app → No permitir.
+4. **Activar Acceso guiado**: Ajustes → Accesibilidad → Acceso guiado.
+5. **Desactivar datos móviles**: Ajustes → Datos móviles → desactivar todo.
+
+**Tiempo total: unos 15 minutos.**
+
+---
+
+## ¿Qué modelos de iPhone son adecuados?
+
+| Modelo | iOS 16 | Precio usado |
+|---|---|---|
+| iPhone 6s | ✅ | ~20–30€ |
+| iPhone 7 | ✅ | ~30–50€ |
+| iPhone 8 | ✅ | ~50–80€ |
+| iPhone X | ✅ | ~80–120€ |
+
+**[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── BESTE GERAETE EN/FR/ES ──────────────────────────────────────────────
+  {
+    slug: "beste-kindermusik-geraete",
+    lang: "en",
+    title: "The 5 Best Kids Music Devices 2026: Big Comparison",
+    description: "Toniebox, Tigerbox, Yoto Player, Hörbert or RadauApp? We compare the 5 best music devices for children by price, content and sustainability.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["kids music device", "Toniebox comparison", "Tigerbox", "Yoto Player", "RadauApp"],
+    readingTime: 7,
+    faqSchema: [
+      { question: "What is the best music device for kids?", answer: "The best kids music device depends on budget. RadauApp on an old iPhone is the cheapest option (free). The Toniebox is the most popular hardware option (~€100). For Apple Music subscribers, RadauApp is the clear recommendation." },
+      { question: "Which kids music device is most sustainable?", answer: "RadauApp is the most sustainable kids music device because it requires no new device. It uses already available iPhones, avoiding new e-waste and CO₂ emissions." },
+    ],
+    content: `
+## The 5 best kids music devices 2026
+
+**#1 RadauApp (free)** – Free, old iPhone, Apple Music + MP3 + Podcasts + Web radio. Most content, zero cost, most sustainable.
+
+**#2 Toniebox (~€100)** – Most popular hardware option. Tactile figure concept, very robust. Cons: expensive figures, no streaming, no podcasts.
+
+**#3 Tigerbox Touch (~€80)** – Touchscreen, custom MP3s possible. Cons: €5/month tigerticket, no Apple Music.
+
+**#4 Yoto Player (~€110)** – Display, night light. Strong in English-speaking markets. Cons: limited German content, expensive cards.
+
+**#5 Hörbert (~€200)** – Most robust, no subscription. Cons: MP3 only, no streaming, no Wi-Fi.
+
+---
+
+## Full comparison
+
+| Device | Price | Apple Music | Podcasts | Web radio | Sustainable |
+|---|---|---|---|---|---|
+| RadauApp | €0 | ✅ | ✅ | ✅ | ✅ |
+| Toniebox | ~€100+ | ❌ | ❌ | ❌ | ❌ |
+| Tigerbox | ~€80+ | ❌ | ✅ | ✅ | ❌ |
+| Yoto Player | ~€110+ | ❌ | ❌ | ❌ | ❌ |
+| Hörbert | ~€200 | ❌ | ❌ | ❌ | ❌ |
+
+**[Download RadauApp free →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "beste-kindermusik-geraete",
+    lang: "fr",
+    title: "Les 5 meilleurs appareils musicaux pour enfants 2026 : Grand comparatif",
+    description: "Toniebox, Tigerbox, Yoto Player, Hörbert ou RadauApp ? Nous comparons les 5 meilleurs appareils musicaux pour enfants.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["appareil musical enfants", "comparatif Toniebox", "Tigerbox", "RadauApp"],
+    readingTime: 7,
+    faqSchema: [
+      { question: "Quel est le meilleur appareil musical pour enfants ?", answer: "Le meilleur appareil musical pour enfants dépend du budget. RadauApp sur un ancien iPhone est l'option la moins chère (gratuit). La Toniebox est l'option matérielle la plus populaire (~100€)." },
+    ],
+    content: `
+## Les 5 meilleurs appareils musicaux pour enfants 2026
+
+**#1 RadauApp (gratuit)** – Gratuit, ancien iPhone, Apple Music + MP3 + Podcasts + Radio web. Le plus de contenu, zéro coût, le plus durable.
+
+**#2 Toniebox (~100€)** – Option matérielle la plus populaire. Concept de figurines tactiles, très robuste. Inconvénients : figurines coûteuses, pas de streaming.
+
+**#3 Tigerbox Touch (~80€)** – Écran tactile, MP3 personnels possibles. Inconvénients : 5€/mois de tigerticket, pas d'Apple Music.
+
+**#4 Yoto Player (~110€)** – Écran, veilleuse. Fort sur les marchés anglophones. Inconvénients : contenu allemand/français limité, cartes coûteuses.
+
+**#5 Hörbert (~200€)** – Le plus robuste, sans abonnement. Inconvénients : MP3 uniquement, pas de streaming.
+
+---
+
+## Comparaison complète
+
+| Appareil | Prix | Apple Music | Podcasts | Radio web | Durable |
+|---|---|---|---|---|---|
+| RadauApp | 0€ | ✅ | ✅ | ✅ | ✅ |
+| Toniebox | ~100€+ | ❌ | ❌ | ❌ | ❌ |
+| Tigerbox | ~80€+ | ❌ | ✅ | ✅ | ❌ |
+| Yoto Player | ~110€+ | ❌ | ❌ | ❌ | ❌ |
+| Hörbert | ~200€ | ❌ | ❌ | ❌ | ❌ |
+
+**[Télécharger RadauApp gratuitement →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+  {
+    slug: "beste-kindermusik-geraete",
+    lang: "es",
+    title: "Los 5 mejores dispositivos de música para niños 2026: Gran comparativa",
+    description: "¿Toniebox, Tigerbox, Yoto Player, Hörbert o RadauApp? Comparamos los 5 mejores dispositivos musicales para niños.",
+    date: "2026-05-21", author: "Jens Becker",
+    tags: ["dispositivo música niños", "comparativa Toniebox", "Tigerbox", "RadauApp"],
+    readingTime: 7,
+    faqSchema: [
+      { question: "¿Cuál es el mejor dispositivo musical para niños?", answer: "El mejor dispositivo musical para niños depende del presupuesto. RadauApp en un iPhone antiguo es la opción más barata (gratis). La Toniebox es la opción de hardware más popular (~100€)." },
+    ],
+    content: `
+## Los 5 mejores dispositivos musicales para niños 2026
+
+**#1 RadauApp (gratis)** – Gratis, iPhone antiguo, Apple Music + MP3 + Podcasts + Radio web. Más contenido, cero coste, más sostenible.
+
+**#2 Toniebox (~100€)** – Opción de hardware más popular. Concepto de figuras táctiles, muy robusto. Desventajas: figuras caras, sin streaming.
+
+**#3 Tigerbox Touch (~80€)** – Pantalla táctil, MP3 propios posibles. Desventajas: 5€/mes de tigerticket, sin Apple Music.
+
+**#4 Yoto Player (~110€)** – Pantalla, luz nocturna. Fuerte en mercados angloparlantes. Desventajas: contenido en español limitado, tarjetas caras.
+
+**#5 Hörbert (~200€)** – El más robusto, sin suscripción. Desventajas: solo MP3, sin streaming.
+
+---
+
+## Comparativa completa
+
+| Dispositivo | Precio | Apple Music | Podcasts | Radio web | Sostenible |
+|---|---|---|---|---|---|
+| RadauApp | 0€ | ✅ | ✅ | ✅ | ✅ |
+| Toniebox | ~100€+ | ❌ | ❌ | ❌ | ❌ |
+| Tigerbox | ~80€+ | ❌ | ✅ | ✅ | ❌ |
+| Yoto Player | ~110€+ | ❌ | ❌ | ❌ | ❌ |
+| Hörbert | ~200€ | ❌ | ❌ | ❌ | ❌ |
+
+**[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
