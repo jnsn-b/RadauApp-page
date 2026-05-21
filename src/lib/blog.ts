@@ -1664,3 +1664,259 @@ export const blogTranslations = {
   fr: { title: "Blog", subtitle: "Conseils, comparaisons et informations sur RadauApp.", readMore: "Lire la suite", readingTime: "min de lecture", backToBlog: "← Retour au blog", by: "Par" },
   es: { title: "Blog", subtitle: "Consejos, comparaciones e información sobre RadauApp.", readMore: "Leer más", readingTime: "min de lectura", backToBlog: "← Volver al blog", by: "Por" },
 };
+
+  // ─── UNSERE GESCHICHTE DE ────────────────────────────────────────────────
+  {
+    slug: "unsere-geschichte",
+    lang: "de",
+    title: "Wie die RadauApp entstand: Von der kaputten Bastelbox zur fertigen App",
+    description: "Zwei kleine Jungs, ein DJ-Papa und ein Apple Music Abo: Die Geschichte hinter der RadauApp – vom Tonuino-Bastelprojekt zur fertigen iOS-App.",
+    date: "2026-05-21",
+    author: "Jens Becker",
+    tags: ["RadauApp Geschichte", "Tonuino Alternative", "Kinder Musikbox selber bauen", "DJ Papa"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Wer hat die RadauApp entwickelt?", answer: "Die RadauApp wurde von Jens Becker entwickelt, Vater von zwei kleinen Söhnen und DJ. Er suchte eine Möglichkeit, seinen Kindern eigenständiges Musikhören mit dem vorhandenen Apple Music Abo zu ermöglichen." },
+      { question: "Was ist der Unterschied zwischen Tonuino und RadauApp?", answer: "Tonuino ist ein DIY-Hardwareprojekt auf Arduino-Basis mit NFC-Karten. Die RadauApp ist eine iOS-App für alte iPhones – ohne Löten, ohne Platine, ohne Ausfallrisiko." },
+    ],
+    content: `
+## Warum gibt es die RadauApp?
+
+Ich bin Jens – DJ, Papa von zwei kleinen Jungs und seit Jahren Apple Music Nutzer. Als meine Söhne alt genug wurden, um Musik zu mögen, stellte ich mir eine einfache Frage:
+
+**Wie können sie selbstständig ihre Musik auswählen – ohne lesen zu können und ohne mein Handy zu benutzen?**
+
+---
+
+## Der erste Versuch: Die RadauBox
+
+Mein erster Ansatz war Hardware. Ich baute eine eigene Box auf Basis des **Tonuino-Projekts** – ein Open-Source-System mit Arduino und NFC-Karten. Jede Karte stand für einen anderen Inhalt. Karte drauflegen, Musik läuft. Genial einfach.
+
+**Was gut funktionierte:**
+- Kinder liebten das haptische Konzept
+- Vollständige Kontrolle über die Inhalte
+- Kein Bildschirm, keine Ablenkung
+
+**Was nicht funktionierte:**
+- Die Box ging irgendwann kaputt
+- Die Platine war nicht mehr verfügbar
+- Neubau nicht möglich
+
+---
+
+## Der zweite Ansatz: Eine App
+
+Statt eine neue Box zu bauen, fragte ich mich: **Was habe ich bereits zuhause?** Ein altes iPhone. Und ein Apple Music Abo.
+
+Also baute ich die RadauApp – eine iOS-App, die das Bedienkonzept der Tonuino-Box ins Digitale überträgt. Große Kacheln mit Bildern statt Text. Tippen statt Lesen. Elternbereich statt offenem Zugriff.
+
+**Was mit der Zeit dazukam:**
+
+- **Podcasts**: Meine Jungs hören beim Einschlafen immer Hörspiele und Podcasts. TKKG, Kakadu, die Maus – alles musste rein.
+- **Webradio**: Sie lieben das Maus-Radio. Also kam auch das hinzu.
+
+---
+
+## Was die RadauApp heute kann
+
+- Apple Music Playlists und Alben
+- Eigene MP3-Dateien
+- Podcast-Feeds (RSS)
+- Webradio-Sender
+- Elternbereich mit Zugriffsschutz
+- Läuft auf jedem iPhone ab 6s
+
+---
+
+## Warum kein Android?
+
+Ich bin selbst iPhone-Nutzer und habe Apple Music. Die App ist für das Ökosystem gebaut, das ich kenne – und in dem alte Geräte besonders lange unterstützt werden. Android folgt vielleicht irgendwann.
+
+---
+
+*Die RadauApp ist mein persönliches Projekt – gebaut für meine Kinder, geteilt mit allen Eltern, die vor der gleichen Frage stehen.*
+
+**[Jetzt kostenlos im App Store →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── OUR STORY EN ────────────────────────────────────────────────────────
+  {
+    slug: "unsere-geschichte",
+    lang: "en",
+    title: "How RadauApp Was Born: From a Broken DIY Box to a Finished App",
+    description: "Two little boys, a DJ dad and an Apple Music subscription: the story behind RadauApp – from a Tonuino DIY project to a finished iOS app.",
+    date: "2026-05-21",
+    author: "Jens Becker",
+    tags: ["RadauApp story", "Tonuino alternative", "kids music box DIY", "DJ dad"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Who built RadauApp?", answer: "RadauApp was built by Jens Becker, father of two young boys and a DJ. He wanted to give his kids an independent way to listen to music using his existing Apple Music subscription." },
+      { question: "What is the difference between Tonuino and RadauApp?", answer: "Tonuino is a DIY hardware project based on Arduino and NFC cards. RadauApp is an iOS app for old iPhones – no soldering, no circuit board, no hardware failure risk." },
+    ],
+    content: `
+## Why does RadauApp exist?
+
+My name is Jens – DJ, dad of two little boys, and a long-time Apple Music subscriber. When my sons got old enough to love music, I asked myself a simple question:
+
+**How can they choose their own music independently – without being able to read, and without using my phone?**
+
+---
+
+## First attempt: The RadauBox
+
+My first approach was hardware. I built a custom box based on the **Tonuino project** – an open-source system using Arduino and NFC cards. Each card represented different content. Place the card, music plays. Brilliantly simple.
+
+**What worked well:**
+- Kids loved the tactile concept
+- Full control over the content
+- No screen, no distractions
+
+**What didn't work:**
+- The box eventually broke
+- The circuit board was no longer available
+- Rebuilding wasn't possible
+
+---
+
+## Second approach: An app
+
+Instead of building a new box, I asked myself: **What do I already have at home?** An old iPhone. And an Apple Music subscription.
+
+So I built RadauApp – an iOS app that brings the Tonuino concept into the digital world. Large picture tiles instead of text. Tap instead of read. Parental controls instead of open access.
+
+**What got added over time:**
+
+- **Podcasts**: My boys always listen to stories and podcasts at bedtime. TKKG, Kakadu, the Maus – everything had to be included.
+- **Web radio**: They love Maus Radio. So that was added too.
+
+---
+
+## What RadauApp can do today
+
+- Apple Music playlists and albums
+- Custom MP3 files
+- Podcast feeds (RSS)
+- Web radio stations
+- Parental controls with access protection
+- Runs on any iPhone from 6s onwards
+
+---
+
+*RadauApp is my personal project – built for my kids, shared with every parent facing the same question.*
+
+**[Download free on the App Store →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── NOTRE HISTOIRE FR ───────────────────────────────────────────────────
+  {
+    slug: "unsere-geschichte",
+    lang: "fr",
+    title: "Comment RadauApp est née : D'une boîte DIY cassée à une app terminée",
+    description: "Deux petits garçons, un papa DJ et un abonnement Apple Music : l'histoire derrière RadauApp – d'un projet Tonuino à une app iOS complète.",
+    date: "2026-05-21",
+    author: "Jens Becker",
+    tags: ["histoire RadauApp", "alternative Tonuino", "boîte musique DIY", "papa DJ"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Qui a créé RadauApp ?", answer: "RadauApp a été créée par Jens Becker, père de deux jeunes garçons et DJ. Il voulait permettre à ses enfants de choisir leur musique de façon autonome grâce à son abonnement Apple Music existant." },
+    ],
+    content: `
+## Pourquoi RadauApp existe-t-elle ?
+
+Je m'appelle Jens – DJ, papa de deux petits garçons et abonné Apple Music depuis des années. Quand mes fils ont commencé à aimer la musique, je me suis posé une question simple :
+
+**Comment peuvent-ils choisir leur musique de façon autonome – sans savoir lire et sans utiliser mon téléphone ?**
+
+---
+
+## Première tentative : La RadauBox
+
+Ma première approche était matérielle. J'ai fabriqué une boîte basée sur le **projet Tonuino** – un système open-source utilisant Arduino et des cartes NFC. Chaque carte représentait un contenu différent. Poser la carte, la musique joue. Brillamment simple.
+
+**Ce qui fonctionnait bien :**
+- Les enfants adoraient le concept tactile
+- Contrôle total sur les contenus
+- Pas d'écran, pas de distractions
+
+**Ce qui ne fonctionnait pas :**
+- La boîte a fini par tomber en panne
+- La carte électronique n'était plus disponible
+- La reconstruction était impossible
+
+---
+
+## Deuxième approche : Une application
+
+Au lieu de construire une nouvelle boîte, je me suis demandé : **qu'est-ce que j'ai déjà à la maison ?** Un ancien iPhone. Et un abonnement Apple Music.
+
+J'ai donc créé RadauApp – une application iOS qui transpose le concept Tonuino dans le monde numérique. De grandes tuiles avec des images plutôt que du texte. Appuyer plutôt que lire. Contrôle parental plutôt qu'accès ouvert.
+
+**Ce qui s'est ajouté avec le temps :**
+- **Podcasts** : Mes garçons écoutent toujours des histoires au coucher. Tout devait être inclus.
+- **Radio web** : Ils adorent la radio de la Souris. Alors ça a été ajouté aussi.
+
+---
+
+*RadauApp est mon projet personnel – créé pour mes enfants, partagé avec tous les parents qui se posent la même question.*
+
+**[Télécharger gratuitement sur l'App Store →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── NUESTRA HISTORIA ES ─────────────────────────────────────────────────
+  {
+    slug: "unsere-geschichte",
+    lang: "es",
+    title: "Cómo nació RadauApp: De una caja DIY rota a una app terminada",
+    description: "Dos niños pequeños, un papá DJ y una suscripción a Apple Music: la historia detrás de RadauApp – de un proyecto Tonuino a una app iOS completa.",
+    date: "2026-05-21",
+    author: "Jens Becker",
+    tags: ["historia RadauApp", "alternativa Tonuino", "caja música DIY", "papá DJ"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "¿Quién creó RadauApp?", answer: "RadauApp fue creada por Jens Becker, padre de dos niños pequeños y DJ. Quería que sus hijos pudieran elegir su música de forma independiente usando su suscripción existente a Apple Music." },
+    ],
+    content: `
+## ¿Por qué existe RadauApp?
+
+Me llamo Jens – DJ, padre de dos niños pequeños y suscriptor de Apple Music desde hace años. Cuando mis hijos empezaron a amar la música, me hice una pregunta sencilla:
+
+**¿Cómo pueden elegir su propia música de forma independiente, sin saber leer y sin usar mi teléfono?**
+
+---
+
+## Primer intento: La RadauBox
+
+Mi primer enfoque fue el hardware. Construí una caja personalizada basada en el **proyecto Tonuino** – un sistema open-source que usa Arduino y tarjetas NFC. Cada tarjeta representaba un contenido diferente. Poner la tarjeta, suena la música. Brillantemente simple.
+
+**Lo que funcionó bien:**
+- A los niños les encantó el concepto táctil
+- Control total sobre los contenidos
+- Sin pantalla, sin distracciones
+
+**Lo que no funcionó:**
+- La caja se estropeó
+- La placa ya no estaba disponible
+- Era imposible reconstruirla
+
+---
+
+## Segundo enfoque: Una aplicación
+
+En lugar de construir una nueva caja, me pregunté: **¿qué tengo ya en casa?** Un iPhone antiguo. Y una suscripción a Apple Music.
+
+Así que creé RadauApp – una app iOS que lleva el concepto Tonuino al mundo digital. Grandes mosaicos con imágenes en lugar de texto. Tocar en lugar de leer. Control parental en lugar de acceso abierto.
+
+**Lo que se añadió con el tiempo:**
+- **Podcasts**: Mis hijos siempre escuchan historias al acostarse. Todo tenía que estar incluido.
+- **Radio web**: Les encanta la radio del Ratón. Así que eso también se añadió.
+
+---
+
+*RadauApp es mi proyecto personal – creado para mis hijos, compartido con todos los padres que se hacen la misma pregunta.*
+
+**[Descargar gratis en la App Store →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
