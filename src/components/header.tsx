@@ -89,6 +89,7 @@ export default function Header({ language, setLanguage }: HeaderProps) {
       </Link>
 
       <div className="flex items-center gap-2 sm:gap-4">
+        <Link href="/blog" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors hidden sm:block">Blog</Link>
         <AppStoreButton />
 
         <DropdownMenu>
