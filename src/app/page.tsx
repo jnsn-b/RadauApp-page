@@ -5,7 +5,7 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "RadauApp",
-  "operatingSystem": "iOS",
+  "operatingSystem": "iOS, iPadOS",
   "applicationCategory": "MusicApplication",
   "aggregateRating": {
     "@type": "AggregateRating",

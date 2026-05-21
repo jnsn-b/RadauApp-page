@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     tags: ["Toniebox Alternative", "Kinder Musikbox", "nachhaltig", "Vergleich"],
     readingTime: 6,
     faqSchema: [
-      { question: "Was ist eine gute Alternative zur Toniebox?", answer: "Die RadauApp auf einem alten iPhone ist eine günstige, nachhaltige Toniebox-Alternative. Sie funktioniert ab iPhone 6s, unterstützt Apple Music, eigene MP3s, Podcasts und Webradio – kostenlos im App Store." },
+      { question: "Was ist eine gute Alternative zur Toniebox?", answer: "Die RadauApp auf einem alten iPhone oder iPad ist eine günstige, nachhaltige Toniebox-Alternative. Sie funktioniert ab iPhone 6s und auf allen iPads, unterstützt Apple Music, eigene MP3s, Podcasts und Webradio – kostenlos im App Store." },
       { question: "Was kostet die Toniebox im Vergleich zur RadauApp?", answer: "Die Toniebox kostet ca. 100€, jede Tonie-Figur 15–20€. Die RadauApp ist gratis. Ein gebrauchtes iPhone 6s kostet ca. 20–40€. Wer bereits ein altes iPhone hat, zahlt gar nichts." },
       { question: "Kann die RadauApp eigene Hörspiele abspielen?", answer: "Ja. In der RadauApp können eigene MP3-Dateien, Apple Music Playlists, Podcasts und Webradio-Sender eingebunden werden." },
     ],
@@ -37,7 +37,7 @@ Die **RadauApp** ist eine kostenlose iOS-App, die ein altes iPhone in eine kinde
 
 **Kurz zusammengefasst:**
 - Kostenlos im App Store
-- Läuft auf iPhone 6s oder neuer
+- Läuft auf iPhone 6s oder neuer, sowie auf allen iPads
 - Unterstützt Apple Music, MP3s, Podcasts und Webradio
 - Kindgerechte Bedienung ohne Lesekenntnisse
 - Elternbereich mit Zugriffsschutz
@@ -113,18 +113,26 @@ Die **RadauApp** ist eine kostenlose iOS-App, die ein altes iPhone in eine kinde
       { question: "Wie richte ich ein altes iPhone als Kindermusikbox ein?", answer: "1. RadauApp kostenlos im App Store installieren. 2. Elternbereich öffnen und Inhalte hinzufügen. 3. Optional: Geführten Zugriff aktivieren. Das dauert ca. 10 Minuten." },
     ],
     content: `
-## Welches alte iPhone eignet sich als Kindermusikbox?
+## Welches alte iPhone oder iPad eignet sich als Kindermusikbox?
 
-**Geeignet sind alle iPhones ab iPhone 6s** mit iOS 16 oder neuer. Das sind Geräte ab dem Jahr 2015.
+**Geeignet sind alle iPhones ab iPhone 6s sowie alle iPads** mit iOS/iPadOS 16 oder neuer. Das sind Geräte ab dem Jahr 2015.
 
-**Geeignete Modelle im Überblick:**
+**Geeignete iPhone-Modelle:**
 - iPhone 6s / 6s Plus (ab ~20€ gebraucht)
 - iPhone 7 / 7 Plus
 - iPhone 8 / 8 Plus
 - iPhone X, XS, XR
 - iPhone 11 und neuer
 
-Gebraucht sind diese Geräte für **20–60€** erhältlich – deutlich günstiger als jede Spielzeugmusikübox.
+**Geeignete iPad-Modelle:**
+- iPad (5. Generation, 2017) und neuer
+- iPad mini (4. Generation) und neuer
+- iPad Air (2. Generation) und neuer
+- iPad Pro (alle Modelle)
+
+Das iPad eignet sich besonders gut als Musikbox, da der größere Bildschirm die Kacheln noch übersichtlicher macht – ideal für kleinere Kinder.
+
+Gebraucht sind iPhones für **20–60€** und iPads für **30–80€** erhältlich.
 
 ---
 
@@ -386,7 +394,7 @@ Nachhaltiges digitales Spielzeug vermeidet die Produktion neuer Geräte und nutz
 
 **In short:**
 - Free in the App Store
-- Works on iPhone 6s or newer
+- Works on iPhone 6s or newer, and all iPads
 - Supports Apple Music, MP3s, podcasts and web radio
 - Child-friendly interface without reading skills required
 - Parental controls included
@@ -443,7 +451,7 @@ Nachhaltiges digitales Spielzeug vermeidet die Produktion neuer Geräte und nutz
 
 **En bref :**
 - Gratuit sur l'App Store
-- Fonctionne sur iPhone 6s ou plus récent
+- Fonctionne sur iPhone 6s ou plus récent, ainsi que sur tous les iPads
 - Apple Music, MP3, podcasts et radio web
 - Interface simple sans besoin de lire
 - Contrôle parental inclus
@@ -490,7 +498,7 @@ Nachhaltiges digitales Spielzeug vermeidet die Produktion neuer Geräte und nutz
     tags: ["alternativa Toniebox", "música niños", "sostenible"],
     readingTime: 5,
     faqSchema: [
-      { question: "¿Cuál es la mejor alternativa a la Toniebox?", answer: "RadauApp en un iPhone antiguo es una alternativa gratuita y sostenible a la Toniebox. Funciona en iPhone 6s o más nuevo, con Apple Music, MP3, podcasts y radio web." },
+      { question: "¿Cuál es la mejor alternativa a la Toniebox?", answer: "RadauApp en un iPhone antiguo es una alternativa gratuita y sostenible a la Toniebox. Funciona en iPhone 6s o más nuevo, y en todos los iPads, con Apple Music, MP3, podcasts y radio web." },
     ],
     content: `
 ## ¿Cuál es la mejor alternativa a la Toniebox?
@@ -499,7 +507,7 @@ Nachhaltiges digitales Spielzeug vermeidet die Produktion neuer Geräte und nutz
 
 **En resumen:**
 - Gratis en la App Store
-- Funciona en iPhone 6s o más nuevo
+- Funciona en iPhone 6s o más nuevo, y en todos los iPads
 - Apple Music, MP3, podcasts y radio web
 - Interfaz simple sin necesidad de leer
 - Control parental incluido
@@ -1496,6 +1504,143 @@ When starting Guided Access:
 | Activación instantánea | ✅ | ❌ |
 
 **[Descargar RadauApp gratis →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  // ─── IPAD ARTIKEL ────────────────────────────────────────────────────────
+  {
+    slug: "ipad-kindermusikbox",
+    lang: "de",
+    title: "iPad als Kindermusikbox: Die bessere Alternative zur Toniebox",
+    description: "Ein altes iPad als Musikbox für Kinder einrichten – mit der RadauApp geht das in 10 Minuten. Größerer Bildschirm, besserer Sound, gleiche einfache Bedienung.",
+    date: "2026-05-21",
+    author: "RadauApp Team",
+    tags: ["iPad Kinder", "iPad Musikbox", "Toniebox Alternative", "altes iPad nutzen"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Kann ich ein altes iPad als Kindermusikbox nutzen?", answer: "Ja. Die RadauApp läuft auf allen iPads ab iPad 5. Generation (2017) mit iPadOS 16 oder neuer. Das iPad eignet sich besonders gut wegen des großen Bildschirms – Kinder sehen die Kacheln noch besser." },
+      { question: "Welches iPad eignet sich als Kindermusikbox?", answer: "Geeignet sind: iPad ab 5. Generation (2017), iPad mini ab 4. Generation, iPad Air ab 2. Generation, alle iPad Pro Modelle. Gebraucht ab ca. 30–80€ erhältlich." },
+      { question: "Was ist besser als Kindermusikbox – iPhone oder iPad?", answer: "Das iPad eignet sich besonders für zuhause wegen des größeren Bildschirms. Das iPhone ist handlicher für unterwegs. Die RadauApp funktioniert auf beiden Geräten identisch." },
+    ],
+    content: `
+## Kann ich ein altes iPad als Kindermusikbox nutzen?
+
+**Ja – und das iPad hat sogar Vorteile gegenüber dem iPhone:**
+
+- Größerer Bildschirm = größere Kacheln = einfachere Bedienung für kleine Kinder.
+- Besserer eingebauter Lautsprecher als die meisten iPhones.
+- Günstig gebraucht erhältlich.
+- Steht stabil auf dem Tisch – kein Ständer nötig.
+
+---
+
+## Welches iPad eignet sich als Kindermusikbox?
+
+**Alle iPads ab iPad 5. Generation (2017)** mit iPadOS 16 oder neuer sind kompatibel.
+
+| iPad-Modell | Jahr | Gebraucht ca. |
+|---|---|---|
+| iPad 5. Generation | 2017 | ~30–50€ |
+| iPad 6. Generation | 2018 | ~40–60€ |
+| iPad mini 4 | 2015 | ~30–50€ |
+| iPad mini 5 | 2019 | ~50–80€ |
+| iPad Air 2 | 2014 | ~30–50€ |
+| iPad Air 3 | 2019 | ~60–100€ |
+| iPad Pro (alle) | ab 2015 | ~60–150€ |
+
+---
+
+## iPhone oder iPad – was ist besser für Kinder?
+
+| | iPhone | iPad |
+|---|---|---|
+| Zuhause nutzen | ✅ | ✅✅ Empfohlen |
+| Unterwegs / Auto | ✅✅ Empfohlen | ⚠️ Sperrig |
+| Bildschirmgröße | Klein | Groß – besser für Kleinkinder |
+| Lautsprecher | Mittel | Gut |
+| Preis gebraucht | ~20–60€ | ~30–100€ |
+
+**Tipp:** Viele Familien nutzen ein iPad zuhause und ein iPhone im Auto.
+
+---
+
+## Einrichtung in 10 Minuten
+
+1. **RadauApp** kostenlos im App Store installieren.
+2. **Elternbereich** öffnen und Inhalte hinzufügen (Apple Music, Podcasts, MP3s).
+3. **Geführten Zugriff** aktivieren: Einstellungen → Bedienungshilfen → Geführter Zugriff.
+4. **Standfuß** aufstellen – fertig.
+
+---
+
+## Warum ist das besser als eine Toniebox?
+
+- Toniebox kostet ~100€ + 15–20€ pro Figur.
+- Ein gebrauchtes iPad kostet ~30–80€ – einmalig, kein Nachkaufen.
+- Zugang zu Apple Music, Podcasts, Webradio und eigenen MP3s.
+- Kein Plastikfiguren-Chaos.
+
+**[Jetzt RadauApp kostenlos herunterladen →](https://apps.apple.com/de/app/radauapp/id6745492017)**
+    `
+  },
+
+  {
+    slug: "ipad-kindermusikbox",
+    lang: "en",
+    title: "iPad as a Kids Music Box: The Better Alternative to Toniebox",
+    description: "Set up an old iPad as a music box for kids with RadauApp in 10 minutes. Bigger screen, better sound, same simple interface.",
+    date: "2026-05-21",
+    author: "RadauApp Team",
+    tags: ["iPad kids", "iPad music box", "Toniebox alternative", "old iPad"],
+    readingTime: 4,
+    faqSchema: [
+      { question: "Can I use an old iPad as a kids music box?", answer: "Yes. RadauApp works on all iPads from iPad 5th generation (2017) with iPadOS 16 or newer. The iPad is ideal due to its large screen – kids can see the tiles even better." },
+    ],
+    content: `
+## Can I use an old iPad as a kids music box?
+
+**Yes – and the iPad has advantages over the iPhone:**
+
+- Larger screen = bigger tiles = easier for small children.
+- Better built-in speaker than most iPhones.
+- Available cheaply second-hand.
+- Stands stable on a table – no stand needed.
+
+---
+
+## Which iPad works as a kids music box?
+
+**All iPads from iPad 5th generation (2017)** with iPadOS 16 or newer are compatible.
+
+| iPad model | Year | Used price |
+|---|---|---|
+| iPad 5th gen | 2017 | ~€30–50 |
+| iPad mini 4 | 2015 | ~€30–50 |
+| iPad Air 2 | 2014 | ~€30–50 |
+| iPad Pro (all) | from 2015 | ~€60–150 |
+
+---
+
+## iPhone or iPad – which is better for kids?
+
+| | iPhone | iPad |
+|---|---|---|
+| Home use | ✅ | ✅✅ Recommended |
+| On the go / car | ✅✅ Recommended | ⚠️ Bulky |
+| Screen size | Small | Large – better for toddlers |
+| Speaker | Medium | Good |
+| Used price | ~€20–60 | ~€30–100 |
+
+---
+
+## Setup in 10 minutes
+
+1. Install **RadauApp** free from the App Store.
+2. Open **parental area** and add content (Apple Music, podcasts, MP3s).
+3. Enable **Guided Access**: Settings → Accessibility → Guided Access.
+4. Set up a stand – done.
+
+**[Download RadauApp free →](https://apps.apple.com/de/app/radauapp/id6745492017)**
     `
   },
 
